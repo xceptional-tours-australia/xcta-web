@@ -1,9 +1,10 @@
-import { Button } from "@/components/ui/button";
+import React from 'react'
+import "./style.css"
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-        <Button>this is from shadcn ui</Button>
+    <main className="home">
+      <span>home</span>
     </main>
   );
 }

@@ -1,0 +1,74 @@
+.navbar {
+  @apply
+  /* border */
+  border-blue-500
+  flex
+  justify-between
+  bg-c-white
+  h-[10rem]
+  px-[4rem]
+  items-center
+}
+
+.navbar__logo,
+.navbar__items,
+.navbar__action {
+  @apply
+  flex-1
+}
+
+.navbar__logo {
+  @apply
+  /* border */
+  flex
+  justify-start
+}
+.navbar__items {
+  @apply
+  /* border */
+  flex
+  justify-center
+  text-[1.6rem]
+  gap-[4rem]
+}
+
+.navbar__item {
+  @apply
+  /* border */
+  flex
+  items-center
+  gap-[1rem]
+}
+
+.navbar__item a {
+  @apply
+  text-c-font-color-main/70
+  transition-all
+  ease-in
+}
+
+.navbar__item--active a {
+  @apply
+  text-c-font-color-main
+}
+
+.navbar__item-dot {
+  @apply
+  w-[.4rem]
+  h-[.4rem]
+  bg-transparent
+  rounded-full
+  transition-all
+  ease-in
+}
+
+.navbar__item--active .navbar__item-dot {
+  @apply
+  bg-c-variant-orange
+}
+.navbar__action {
+  @apply
+  /* border */
+  flex
+  justify-end
+}

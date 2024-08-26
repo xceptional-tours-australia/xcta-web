@@ -1,0 +1,91 @@
+.footer {
+  @apply
+  /* border */
+  bg-c-blue-dark
+  text-c-white
+}
+
+.footer__main {
+  @apply
+  /* border */
+  px-[14rem]
+  pt-[6rem]
+  pb-[10rem]
+  flex
+  justify-between
+}
+
+.footer__address {
+  @apply
+  /* border */
+  flex
+  flex-col
+  gap-[2rem]
+  text-[1.6rem]
+}
+
+.footer__contact {
+  @apply
+  /* border */
+  flex
+  gap-[10rem]
+  items-end
+}
+
+.footer__social-media {
+  @apply
+  flex
+  gap-[4rem]
+}
+
+.footer__social-media svg {
+  @apply
+  h-[1.8rem]
+}
+
+.footer__directs {
+  @apply
+  /* border */
+  flex
+  flex-col
+  gap-[2rem]
+}
+
+.footer__direct {
+  @apply
+  /* border */
+  flex
+  flex-col
+  gap-[.1rem]
+}
+
+.footer__direct span {
+  @apply
+  text-[1.4rem]
+  text-c-font-color-secondary-2
+}
+
+
+.footer__direct a {
+  @apply
+  text-[1.8rem]
+  font-medium
+}
+
+
+.footer__other {
+  @apply
+  bg-c-variant-blue
+  flex
+  justify-between
+  px-[4rem]
+  py-[1.6rem]
+  text-[1.4rem]
+  text-c-font-color-secondary-2
+}
+
+.footer__legal {
+  @apply
+  flex
+  gap-[4rem]
+}

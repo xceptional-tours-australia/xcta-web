@@ -19,6 +19,16 @@ const config = {
     },
     extend: {
       colors: {
+        'c-blue-dark': '#183A65',
+        'c-blue-light': '#00A4B7',
+        'c-black': '#282828',
+        'c-white': '#ffffff',
+        'c-variant-yelow': '#FFDD67',
+        'c-variant-orange': '#FF6347',
+        'c-variant-blue': '#1C3350',
+        'c-font-color-main': '#282828',
+        'c-font-color-secondary-1': '#494949',
+        'c-font-color-secondary-2': '#C3CBD6',
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
