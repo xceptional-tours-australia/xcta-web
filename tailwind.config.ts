@@ -21,6 +21,7 @@ const config = {
       colors: {
         'c-blue-dark': '#183A65',
         'c-blue-light': '#00A4B7',
+        'c-blue-soft': '#4F73A1',
         'c-black': '#282828',
         'c-white': '#ffffff',
         'c-variant-yelow': '#FFDD67',
