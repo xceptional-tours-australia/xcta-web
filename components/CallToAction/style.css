@@ -1,0 +1,57 @@
+.cta {
+  @apply
+  /* border */
+  min-h-[51.6rem]
+  bg-c-blue-dark
+  text-c-white
+  relative
+  overflow-hidden
+  flex
+  justify-center
+  items-center
+}
+
+.cta__decorative {
+  @apply
+  absolute
+  w-[29rem]
+  h-[90rem]
+  bg-gradient-to-t from-10% from-c-blue-soft to-80% to-c-blue-dark/0
+  -rotate-45
+  right-[-9.4rem]
+  top-[-32rem]
+}
+
+.cta__content {
+  @apply
+  /* border */
+  flex
+  flex-col
+  gap-[6rem]
+  items-center
+}
+
+.cta__texts {
+  @apply
+  flex
+  flex-col
+  gap-[1.6rem]
+  items-center
+  text-center
+  /* border-red-50 */
+  /* border   */
+}
+
+.cta__title {
+  @apply
+  text-[4rem]
+  font-semibold
+}
+
+.cta__text {
+  @apply
+  text-[1.6rem]
+  max-w-[60%]
+  leading-[2.8rem]
+  /* border */
+}
