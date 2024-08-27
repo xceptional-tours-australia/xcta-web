@@ -4,10 +4,14 @@
   border-blue-500
   flex
   justify-between
-  bg-c-white
+  /* bg-c-white */
   h-[10rem]
   px-[4rem]
   items-center
+  fixed
+  top-0
+  w-full
+  z-50
 }
 
 .navbar__logo,
@@ -42,14 +46,16 @@
 
 .navbar__item a {
   @apply
-  text-c-font-color-main/70
+  /* text-c-font-color-main/70 */
+  text-c-white/70
   transition-all
   ease-in
 }
 
 .navbar__item--active a {
   @apply
-  text-c-font-color-main
+  /* text-c-font-color-main */
+  text-c-white
 }
 
 .navbar__item-dot {

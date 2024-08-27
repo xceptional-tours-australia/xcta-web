@@ -1,0 +1,137 @@
+.hero {
+  @apply
+  /* border */
+  /* border-red-500 */
+  relative
+  w-full
+  h-screen
+  overflow-hidden
+  flex
+  flex-col
+  justify-end
+}
+
+.hero::after {
+  @apply
+  absolute
+  content-[""]
+  inset-0
+  bg-gradient-to-b to-90% from-c-blue-dark to-c-blue-dark/0
+  z-10
+  opacity-[30%]
+}
+
+.hero__image {
+  @apply
+  absolute
+  inset-0
+  top-1/2 
+  left-1/2 
+  w-full 
+  h-full 
+  object-cover 
+  transform 
+  -translate-x-1/2 
+  -translate-y-1/2
+}
+
+.hero__main {
+  @apply
+  relative
+  z-20
+  /* border */
+  text-c-white
+  h-full
+  mt-[15rem]
+  flex
+  flex-col
+  /* gap-[4rem] */
+}
+
+.hero__line {
+  @apply
+  /* border */
+  flex-1
+  /* border-red-500 */
+  relative
+  flex
+  justify-center
+}
+
+.hero__line:nth-child(1) {
+  @apply
+  max-h-[14%]
+}
+
+.hero__line::after {
+  @apply
+  absolute
+  content-[""]
+  top-0
+  bottom-0
+  w-[1px]
+  bg-c-white
+}
+
+.hero__texts {
+  @apply
+  /* border */
+  /* flex-1 */
+  flex
+  justify-center
+  items-center
+  flex-col
+  text-center
+  gap-[1rem]
+  my-[4rem]
+}
+
+.hero__title {
+  @apply
+  text-[4.8rem]
+}
+
+.hero__text {
+  @apply
+  text-[1.6rem]
+}
+
+.hero__scroll {
+  @apply
+  /* border */
+  flex
+  justify-center
+  overflow-hidden
+}
+
+.hero__scroll div {
+  @apply
+  aspect-square
+  w-[15.4rem]
+  border
+  rounded-full
+  flex
+  justify-center
+  items-center
+  border-dashed
+  -mb-[calc(15.4rem/2)]
+  /* mb-[50%] */
+}
+
+.hero__scroll span {
+  @apply
+  aspect-square
+  w-[10.6rem]
+  border
+  border-spacing-[2rem]
+  rounded-full
+  flex
+  justify-center
+  items-center
+  text-[1.2rem]
+}
+
+.hero__scroll p {
+  @apply
+  -translate-y-[1.8rem]
+}

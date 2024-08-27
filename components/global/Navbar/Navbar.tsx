@@ -34,7 +34,7 @@ export default function Navbar() {
     <nav className="navbar">
       <div className="navbar__logo">
         <Image 
-          src={xctaLogo}
+          src={xctaLogoWhite}
           alt="xcta logo white"
           height={45}
         />
