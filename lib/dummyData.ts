@@ -1,3 +1,18 @@
+export const menus = [
+  {
+    title: "Home",
+    url: "/"    
+  },
+  {
+    title: "Our Services",
+    url: "/our-services"    
+  },
+  {
+    title: "About Us",
+    url: "/about-us"    
+  }
+]
+
 export const abouts = [
   {
     title: "Welcome to Xceptional Tours Australia (XCTA)",
@@ -12,3 +27,4 @@ export const abouts = [
     paragraph: "At Xceptional Tours Australia (XCTA), our team is the heart and soul of our business. With an average of 18 years of experience in the travel, tourism, and aviation industries, our seasoned destination marketers are dedicated to crafting exceptional travel experiences for our clients. Each member brings a wealth of knowledge and passion to ensure that every journey is seamless, personalized, and unforgettable."
   }
 ]
+

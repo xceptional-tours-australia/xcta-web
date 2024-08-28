@@ -1,17 +1,44 @@
 .navbar {
   @apply
+  fixed
+  top-0
+  z-50
   /* border */
-  border-blue-500
+  w-full
+  transition-all
+  ease-in-out
+  duration-500
+  /* bg-c-white */
+}
+
+.navbar--hidden {
+  @apply
+  -translate-y-[100%]
+  transition-all
+  ease-out
+  duration-500
+}
+
+.navbar--scrolled {
+  @apply
+  bg-c-white
+  transition-all
+  ease-in-out
+  duration-500
+}
+
+.navbar__container {
+  @apply
+  /* border */
+  /* border-blue-500 */
   flex
   justify-between
   /* bg-c-white */
   h-[10rem]
   px-[4rem]
   items-center
-  fixed
-  top-0
-  w-full
-  z-50
+  max-w-[144rem]
+  mx-auto
 }
 
 .navbar__logo,
@@ -46,16 +73,36 @@
 
 .navbar__item a {
   @apply
-  /* text-c-font-color-main/70 */
-  text-c-white/70
+  text-c-font-color-main/70
+  /* text-c-white/70 */
   transition-all
   ease-in
 }
 
 .navbar__item--active a {
   @apply
-  /* text-c-font-color-main */
+  text-c-font-color-main
+  /* text-c-white */
+}
+
+.navbar--home .navbar__item a {
+  @apply
+  text-c-white/70
+}
+
+.navbar--home .navbar__item--active a {
+  @apply
   text-c-white
+}
+
+.navbar--scrolled .navbar__item a {
+  @apply
+  text-c-black/70
+}
+
+.navbar--scrolled .navbar__item--active a {
+  @apply
+  text-c-black
 }
 
 .navbar__item-dot {
