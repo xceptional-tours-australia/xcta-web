@@ -85,3 +85,13 @@ main {
   @apply
   min-h-screen
 }
+
+.section-wrapper {
+  @apply
+  /* border */
+  /* border-red-500 */
+  w-full
+  max-w-[144rem]
+  mx-auto
+  px-[14rem]
+}

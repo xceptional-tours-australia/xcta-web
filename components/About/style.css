@@ -1,0 +1,64 @@
+.about {
+  @apply
+  mt-[20rem]
+  /* border */
+}
+
+.about__container {
+  @apply
+  /* border */
+  /* border-green-300 */
+  flex
+  gap-[4rem]
+}
+
+.about__title {
+  @apply
+  /* border */
+  flex-1
+}
+
+.about__title h1 {
+  @apply
+  text-[4.8rem]
+  font-bold
+  text-c-blue-dark
+}
+
+.about__title h1 span {
+  @apply
+  text-c-blue-light
+  font-normal
+}
+
+.about__boxs {
+  @apply
+  /* border */
+  w-screen
+  max-w-[70rem]
+  flex
+  flex-col
+  gap-[4rem]
+  relative
+}
+
+.about__box {
+  @apply
+  border
+  border-c-blue-dark
+  rounded-[2rem]
+  p-[4rem]
+  flex
+  flex-col
+  gap-[2rem]
+  sticky
+  top-0
+  bg-c-white
+  min-h-[40rem]
+}
+
+.about__box span {
+  @apply
+  text-c-blue-dark
+  text-[3rem]
+}
