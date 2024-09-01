@@ -1,0 +1,23 @@
+.about-section__container{
+    @apply grid grid-cols-1 md:grid-cols-2 gap-8 text-center md:text-start;
+}
+
+.about-section__img-wrapper{
+    @apply w-full h-full;
+}
+
+.about-section__img{
+    @apply rounded-3xl shadow-sm shadow-c-blue-light;
+}
+
+.about-section__content{
+    @apply p-8;
+}
+
+.about-section__title{
+    @apply font-semibold text-5xl leading-snug mb-8 text-c-black;
+}
+
+.about-section__paragraph{
+    @apply text-c-black font-[400] mb-16 leading-relaxed;
+}

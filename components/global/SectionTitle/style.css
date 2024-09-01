@@ -1,0 +1,7 @@
+.section-title__container{
+    @apply py-16 mb-8;
+}
+
+.section-title__text{
+    @apply text-6xl text-c-blue-dark font-semibold;
+}
