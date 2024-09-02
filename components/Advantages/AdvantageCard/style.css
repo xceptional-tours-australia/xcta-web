@@ -1,0 +1,23 @@
+.advantage-card{
+    @apply flex gap-12 text-center flex-col lg:flex-row lg:gap-20 lg:text-start;
+}
+
+.advantage-card__img-wrapper{
+    @apply flex-1 relative z-[1] after:content-[''] after:block after:w-3/4 after:h-full after:bg-gradient-to-br after:from-65% after:from-c-blue-dark after:to-c-blue-soft  after:absolute after:-bottom-7 after:-right-7 after:z-[-1] after:rounded-2xl;
+}
+
+.advantage-card__img{
+    @apply w-full h-[300px] object-cover object-center rounded-xl;
+}
+
+.advantage-card__content-wrapper{
+    @apply flex-1 py-8;
+}
+
+.advantage-card__content-title{
+    @apply text-c-white font-[500] text-5xl mb-8;
+}
+
+.advantage-card__content-paragraph{
+    @apply text-c-white leading-loose lg:pe-16;
+}
