@@ -55,6 +55,28 @@ export const advantages = [
         title: "Access to Exclusive Deals",
         paragraph: "Benefit from our strong relationships with suppliers, allowing us to offer exclusive deals and promotions that provide exceptional value."
     },
-
 ];
 
+
+export const services = [
+    {
+        icon: 'faInstgaram',
+        title: "Bespoke Tours"
+    },
+    {
+        icon: 'faInstgaram',
+        title: "Day Tours"
+    },
+    {
+        icon: 'faInstgaram',
+        title: "Educational Groups"
+    },
+    {
+        icon: 'faInstgaram',
+        title: "Special Interest Groups"
+    },
+    {
+        icon: 'faInstgaram',
+        title: "Special Interest Groups"
+    },
+];
