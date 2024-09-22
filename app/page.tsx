@@ -3,6 +3,7 @@ import "./style.css"
 import Hero from '@/components/Hero/Hero'
 import AboutSection from '@/components/AboutSection/AboutSection';
 import Advantages from '@/components/Advantages/Advantages';
+import ServiceSection from '@/components/ServiceSection/ServiceSection';
 
 
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
       <Hero />
       <AboutSection/>
       <Advantages/>
+      <ServiceSection/>
     </main>
   );
 }
