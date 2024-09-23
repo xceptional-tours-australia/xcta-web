@@ -2,6 +2,7 @@ import React from "react";
 import "./style.css";
 import Link from "next/link";
 import { Button } from "../ui/button";
+import { MapIcon } from "lucide-react";
 
 export default function OurServiceItem() {
   return (
@@ -12,22 +13,22 @@ export default function OurServiceItem() {
         </div>
 
         <div className="our-service-item__content">
-          <div>
-            <div className="our-service-item__semicircle">
-              <div>
-                <span></span>
-              </div>
-            </div>
+          <div className="our-service-item__overlay-gradient">
+            <div className="our-service-item__circle-1 our-service-item__overlay-circle-gradient"></div>
+            <div className="our-service-item__circle-2 our-service-item__overlay-circle-gradient"></div>
+            <div className="our-service-item__circle-3 our-service-item__overlay-circle-gradient"></div>
           </div>
 
-          <div className="px-10 py-9 flex absolute top-0 bottom-0 z-10">
-            <div className="border flex-1 flex flex-col justify-center items-center">
-              <div>icon</div>
-              <p>Bespoke tours</p>
+          <div className="our-service-item__card-wrapper">
+            <div className="our-service-item__card-highlight">
+              <div>
+                <MapIcon />
+              </div>
+              <h1>Bespoke tours</h1>
             </div>
-            <div className="border flex-1">
-              <div className="border h-full flex flex-col justify-between">
-                <div className="text-base">
+            <div className="flex-[2]">
+              <div className="h-full flex flex-col justify-between">
+                <div className="text-[1.6rem]">
                   <p>
                     At Xceptional Tours Australia, we understand that every
                     traveller is unique. That`s why we offer Bespoke Tour
@@ -41,11 +42,11 @@ export default function OurServiceItem() {
                   </p>
                 </div>
                 <div>
-                  <Link href="/about-us">
+                  <Link href="/our-services/123">
                     <Button
                       variant="link"
                       type="button"
-                      className="p-0 text-sm text-c-variant-orange"
+                      className="p-0 text-[1.4rem] text-c-variant-orange"
                     >
                       Read More
                     </Button>

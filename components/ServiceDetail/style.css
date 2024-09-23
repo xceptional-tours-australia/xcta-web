@@ -1,0 +1,49 @@
+.service-detail__content {
+  @apply py-[20rem];
+}
+
+.service-detail__content-header {
+  @apply flex 
+  items-center 
+  justify-between
+  mb-[6rem];
+}
+
+.service-detail__content-header_title {
+  @apply flex items-center gap-4;
+}
+
+.service-detail__content-header_icon {
+  @apply border 
+  border-c-blue-dark 
+  p-4 
+  rounded-lg
+  text-c-blue-dark;
+}
+
+.service-detail__content-title {
+  @apply text-[4rem] 
+    text-c-blue-dark 
+    font-medium;
+}
+
+.service-detail__content-navigation {
+  @apply p-0 
+    text-[1.8rem] 
+    text-c-font-color-main 
+    font-normal;
+}
+
+.service-detail__content-img-wrapper {
+  @apply w-full h-[60rem];
+}
+
+.service-detail-content__img {
+  @apply rounded-3xl
+  h-full;
+}
+
+.service-detail__content-desc {
+  @apply mt-[4rem]
+  text-[1.6rem];
+}
