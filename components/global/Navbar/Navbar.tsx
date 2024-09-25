@@ -1,4 +1,5 @@
 "use client"
+
 import { Button } from "@/components/ui/button"
 import React, { useEffect, useState } from "react"
 import xctaLogoWhite from "../../../assets/logo/xcta-logo-white.svg"
@@ -8,6 +9,17 @@ import Image from "next/image"
 import { usePathname } from "next/navigation"
 import "./style.css"
 import { menus } from "@/lib/dummyData"
+import {
+    Sheet,
+    SheetContent,
+    SheetDescription,
+    SheetHeader,
+    SheetTitle,
+    SheetTrigger,
+} from "@/components/ui/sheet";
+import FormAction from "../FormAction/FormAction"
+
+
 
 export default function Navbar() {
   const pathname = usePathname()
@@ -68,7 +80,26 @@ export default function Navbar() {
         </div>
 
         <div className="navbar__action">
-          <Button>Get In Touch</Button>
+            <Sheet>
+                <SheetTrigger asChild>
+                    <Button>Get In Touch</Button>
+                </SheetTrigger>    
+                <SheetContent>
+                    <SheetHeader>
+                        <SheetTitle>
+                            Let's Talk
+                        </SheetTitle>
+                        <SheetDescription>
+                            <span className="text-lg">
+                                Get in Touch with Xceptional Tours Australia
+                            </span>
+                        </SheetDescription>
+                    </SheetHeader>
+                    <div className="mt-8">
+                        <FormAction></FormAction>
+                    </div>
+                </SheetContent>
+            </Sheet>
         </div>
       </div>
     </div>
