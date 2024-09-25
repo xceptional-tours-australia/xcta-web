@@ -87,7 +87,7 @@ export default function Navbar() {
                 <SheetContent>
                     <SheetHeader>
                         <SheetTitle>
-                            Let's Talk
+                            Let&apos;s Talk
                         </SheetTitle>
                         <SheetDescription>
                             <span className="text-lg">
