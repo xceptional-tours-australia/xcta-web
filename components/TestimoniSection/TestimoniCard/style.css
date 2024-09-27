@@ -1,3 +1,7 @@
+.testimoni-card__wrapper {
+  @apply w-[36rem]  flex flex-col justify-between;
+}
+
 .testimoni-card__title {
   @apply italic text-4xl md:text-3xl;
 }
