@@ -1,0 +1,3 @@
+.testimoni-section__container {
+  @apply grid grid-cols-3 space-x-10;
+}
