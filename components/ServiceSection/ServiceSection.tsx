@@ -1,19 +1,14 @@
-import SectionTitle from "../global/SectionTitle/SectionTitle";
-import ServiceCard from "./ServiceCard/ServiceCard";
-import { services as serviceData} from "@/lib/dummyData";
+import './style.css';
 import {
     Sheet,
-    SheetClose,
     SheetContent,
-    SheetDescription,
-    SheetFooter,
-    SheetHeader,
-    SheetTitle,
     SheetTrigger,
 } from "@/components/ui/sheet";
 import Link from "next/link";
-import './style.css';
-
+import { services as serviceData} from "@/lib/dummyData";
+import ServiceCardDetail from "./ServiceCardDetail/ServiceCardDetail";
+import SectionTitle from "../global/SectionTitle/SectionTitle";
+import ServiceCard from "./ServiceCard/ServiceCard";
 
 export default function ServiceSection()
 {
@@ -29,6 +24,7 @@ export default function ServiceSection()
                     <SheetTrigger asChild>
                         <ServiceCard  data={data} index={i}/>
                     </SheetTrigger> 
+                    <ServiceCardDetail title={data.title}/>
                 </Sheet> : 
                 <Link href="our-services" key={i}>
                     <ServiceCard data={data} index={i}/>

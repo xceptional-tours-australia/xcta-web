@@ -1,0 +1,15 @@
+.service-card-detail__header{
+    @apply mb-5;
+}
+
+.service-card-detail__desc{
+    @apply text-2xl text-c-blue-dark mb-2;
+}
+
+.service-card-detail__title{
+    @apply text-5xl text-c-blue-dark font-medium;
+}
+
+.service-card-detail__content{
+    @apply text-xl leading-relaxed text-c-black my-12;
+}
