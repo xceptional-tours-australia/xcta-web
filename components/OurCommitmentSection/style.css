@@ -1,0 +1,15 @@
+.our-commitment-section__wrapper {
+  @apply bg-[#486C9A] mt-24;
+}
+
+.our-commitment__content-wrapper {
+  @apply flex items-center;
+}
+
+.our-commitment__content-title {
+  @apply text-[4rem] md:text-[3.5rem] text-c-white font-semibold;
+}
+
+.our-commitment__content-desc {
+  @apply text-[2.2rem] md:text-[2rem] text-c-white font-normal leading-[32px];
+}
