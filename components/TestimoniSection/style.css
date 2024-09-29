@@ -1,0 +1,3 @@
+.testimoni-section__container {
+  @apply flex w-max space-x-16;
+}

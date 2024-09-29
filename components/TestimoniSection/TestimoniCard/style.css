@@ -1,0 +1,24 @@
+.testimoni-card__wrapper {
+  @apply w-[36rem]  flex flex-col justify-between;
+}
+
+.testimoni-card__title {
+  @apply italic text-4xl md:text-3xl;
+}
+
+.testimoni-card__user-container {
+  @apply flex items-center space-x-4;
+}
+
+.testimoni-card__user-profile-picture {
+  @apply w-20 h-20 rounded-full border-2 border-[#E94F37] flex justify-center items-center;
+}
+
+.testimoni-card__user-name {
+  @apply text-2xl font-medium;
+}
+
+.testimoni-card__user-country {
+  @apply text-xl
+    font-normal;
+}
