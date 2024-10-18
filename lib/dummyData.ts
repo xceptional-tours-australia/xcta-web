@@ -106,3 +106,55 @@ export const testimoniData = [
     city: "Tokyo, Japan",
   },
 ];
+
+export const sitemapLinks = [
+  {
+    title: "Home",
+    url: "/home",
+    children: []
+  },
+  {
+    title: "Our Services",
+    url: "/our-services",
+    children: [
+      {
+        title: "Bespoke Tours",
+        url: "/our-services/bespoke-tours"
+      },
+      {
+        title: "Government and Corporate MICE Groups",
+        url: "/our-services/government-corporate-mice-groups"
+      },
+      {
+        title: "Educational Groups",
+        url: "/our-services/educational-groups"
+      },
+      {
+        title: "Special Interest Groups",
+        url: "/our-services/special-interest-groups"
+      },
+      {
+        title: "Transportation Services",
+        url: "/our-services/transportation-services"
+      },
+      {
+        title: "Day Tours",
+        url: "/our-services/day-tours"
+      },
+      {
+        title: "Leisure Series Groups",
+        url: "/our-services/leisure-series-groups"
+      }
+    ]
+  },
+  {
+    title: "About Us",
+    url: "/about-us",
+    children: [
+      {
+        title: "Our Team",
+        url: "/about-us/our-team"
+      }
+    ]
+  }
+];

@@ -81,10 +81,10 @@ body {
   bg-gray-50
 }
 
-main {
+/* main {
   @apply
   min-h-screen
-}
+} */
 
 .section-wrapper {
   @apply

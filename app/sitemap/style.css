@@ -1,0 +1,56 @@
+.sitemap {
+  @apply
+  h-fit
+}
+
+.sitemap .section-wrapper {
+  @apply
+  mt-[10rem]
+  mb-[20rem]
+}
+
+.sitemap__lists {
+  @apply
+  w-fit
+  flex
+  flex-col
+  gap-[1.2rem]
+}
+
+.sitemap__list {
+  @apply
+  w-fit
+  flex
+  items-center
+  gap-[2rem]
+}
+
+.sitemap__list a {
+  @apply
+  text-c-variant-orange
+  text-[1.8rem]
+  font-semibold
+}
+
+.sitemap__list svg {
+  @apply
+  h-[1.2rem]
+}
+
+.sitemap__list--sub {
+  @apply
+  flex
+  flex-col
+  gap-[1rem]
+  h-fit
+}
+
+.sitemap__list--sub .sitemap__lists {
+  @apply
+  ml-[1.6rem]
+}
+
+.sitemap__list--sub .sitemap__lists a {
+  @apply
+  font-normal
+}

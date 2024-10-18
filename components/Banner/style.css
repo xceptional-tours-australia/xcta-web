@@ -1,0 +1,64 @@
+.banner {
+  @apply
+  w-full
+  overflow-hidden
+  aspect-[32/10]
+  relative
+}
+
+.banner::after {
+  @apply
+  absolute
+  content-[""]
+  inset-0
+  bg-gradient-to-t to-100% from-c-blue-dark via-40% via-c-blue-dark to-c-blue-dark/0
+  opacity-[30%]
+  z-0
+}
+
+.banner__image {
+  @apply
+  absolute
+  inset-0
+  top-1/2 
+  left-1/2 
+  w-full 
+  h-full 
+  object-cover 
+  transform 
+  -translate-x-1/2 
+  -translate-y-1/2
+  z-0
+}
+
+.banner__texts {
+  @apply
+  absolute
+  inset-0
+  z-10
+  text-c-white
+  flex
+  justify-center
+  items-center
+}
+
+.banner__wrapper {
+  @apply
+  flex
+  flex-col
+  gap-[2rem]
+  justify-center
+  items-center
+  max-w-[60rem]
+  text-center
+}
+
+.banner__title {
+  @apply
+  text-[4.8rem]
+}
+
+.banner__subtitle {
+  @apply
+  text-[1.6rem]
+}
