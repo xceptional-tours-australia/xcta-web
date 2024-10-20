@@ -1,0 +1,18 @@
+.cta-about-us {
+  @apply
+  bg-c-blue-soft
+  rounded-[2rem]
+  p-[10rem]
+  flex
+  justify-between
+  items-center
+  text-c-white
+}
+
+.cta-about-us span {
+  @apply
+  text-[3rem]
+  leading-[4.2rem]
+  font-bold
+  max-w-[62rem]
+}

@@ -1,13 +1,19 @@
 import React from "react";
 import "./style.css";
-import About from "@/components/About/About";
-import OurCommitmentSection from "@/components/OurCommitmentSection/OurCommitmentSection";
+import Banner from "@/components/Banner/Banner";
+import OurMission from "@/components/OurMission/OurMission";
+import Advantages from "@/components/Advantages/Advantages";
+import ServiceSection from "@/components/ServiceSection/ServiceSection";
+import CallToActionAboutUs from "@/components/CallToActionAboutUs/CallToActionAboutUs";
 
 export default function AboutUs() {
   return (
     <main className="about-us">
-      <About />
-      <OurCommitmentSection />
+      <Banner />
+      <OurMission />
+      <Advantages />
+      <ServiceSection />
+      <CallToActionAboutUs />
     </main>
   );
 }

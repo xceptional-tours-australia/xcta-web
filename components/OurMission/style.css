@@ -1,0 +1,56 @@
+.mission {
+  @apply
+  flex
+  flex-col
+  /* gap-[6rem] */
+}
+
+.mission__body {
+  @apply
+  flex
+  gap-[10rem]
+}
+
+.mission__image {
+  @apply
+  aspect-[126/95]
+  relative
+}
+
+.mission__image img:nth-child(1) {
+  @apply
+  w-full
+  h-[47.5rem]
+  aspect-[126/95]
+  rounded-[2rem]
+  object-cover
+}
+
+.mission__image img:nth-child(2) {
+  @apply
+  absolute
+  w-[60%]
+  aspect-square
+  right-[-25%]
+  bottom-[-25%]
+}
+
+.mission__information {
+  @apply
+  flex-1
+  flex
+  flex-col
+  gap-[2rem]
+}
+
+.mission__title {
+  @apply
+  text-[3.2rem]
+  font-medium
+}
+
+.mission__texts p {
+  @apply
+  text-[1.6rem]
+  leading-[2.4rem]
+}
