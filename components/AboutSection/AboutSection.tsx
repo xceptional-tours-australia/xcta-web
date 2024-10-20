@@ -7,7 +7,7 @@ import './style.css';
 export default function AboutSection(){
 
     return (
-        <section className="section-wrapper py-32">
+        <section className="section-wrapper py-20 lg:py-32">
             <SectionTitle title="About Us"/>
             <div className="about-section__container">
                 <div className="about-section__img-wrapper">

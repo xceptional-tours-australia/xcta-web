@@ -5,14 +5,15 @@ import './style.css';
 
 interface AdvantageDataProps {
     data: {
-        img: StaticImageData;
+        id:number;
+        img: string;
         title: string;
-        paragraph: string;
+        description: string;
     },
     orderLast: boolean
 }
 
-export default function AdvatageCard({data:{img, title, paragraph}, orderLast = false}:AdvantageDataProps)
+export default function AdvatageCard({data:{img, title, description}, orderLast = false}:AdvantageDataProps)
 {
     return (
         <div className="advantage-card">
@@ -21,11 +22,13 @@ export default function AdvatageCard({data:{img, title, paragraph}, orderLast = 
                 src={img}
                 alt={`${title} image`}
                 className="advantage-card__img"
+                width={200}
+                height={200}
                 />
             </div>
             <div className="advantage-card__content-wrapper">
                 <h6 className="advantage-card__content-title">{title}</h6>
-                <p className="advantage-card__content-paragraph">{paragraph}</p>
+                <p className="advantage-card__content-paragraph">{description}</p>
             </div>
         </div>
     )

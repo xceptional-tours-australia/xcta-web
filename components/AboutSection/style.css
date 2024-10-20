@@ -3,11 +3,11 @@
 }
 
 .about-section__img-wrapper{
-    @apply w-full h-full;
+    @apply w-full h-full flex justify-center;
 }
 
 .about-section__img{
-    @apply rounded-3xl shadow-sm shadow-c-blue-light;
+    @apply rounded-3xl shadow-sm shadow-c-blue-light object-cover;
 }
 
 .about-section__content{

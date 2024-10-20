@@ -93,5 +93,6 @@ body {
   w-full
   max-w-[144rem]
   mx-auto
-  px-[14rem]
+  md:px-[8rem]
+  lg:px-[14rem]
 }
