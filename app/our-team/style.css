@@ -1,0 +1,71 @@
+.ourteam .section-wrapper {
+  @apply
+  mt-[10rem]
+  mb-[20rem]
+}
+
+.ourteam__cards {
+  @apply
+  grid
+  grid-cols-3
+  gap-[3rem]
+}
+
+.ourteam__card {
+  @apply
+  border
+  border-c-blue-dark
+  rounded-[2rem]
+  overflow-hidden
+}
+
+.ourteam__head {
+  @apply
+  py-[4.2rem]
+  px-[3rem]
+  flex
+  flex-col
+  gap-[1rem]
+  relative
+  overflow-hidden
+}
+
+.ourteam__head {
+  background: rgb(24,58,101);
+  background: linear-gradient(114deg, rgba(24,58,101,0) 70%, rgba(24,58,101,0.2) 100%);
+}
+
+.ourteam__head::after {
+  @apply
+  content-['']
+  w-[20%]
+  aspect-square
+  bg-red-500
+  absolute
+  rounded-full
+  blur-2xl
+  opacity-50
+  z-0
+  top-0
+  left-[20%]
+  translate-y-[-40%]
+}
+
+.ourteam__title {
+  @apply
+  text-[2.6rem]
+  font-semibold
+  text-c-blue-dark
+}
+
+.ourteam__subtitle {
+  @apply
+  text-[1.6rem]
+}
+
+.ourteam__body {
+  @apply
+  p-[3rem]
+  text-[1.6rem]
+  leading-[2.4rem]
+}
