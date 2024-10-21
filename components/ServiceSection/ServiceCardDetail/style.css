@@ -7,9 +7,9 @@
 }
 
 .service-card-detail__title{
-    @apply text-5xl text-c-blue-dark font-medium;
+    @apply text-5xl text-c-blue-dark font-medium leading-snug;
 }
 
 .service-card-detail__content{
-    @apply text-xl leading-relaxed text-c-black my-12;
+    @apply text-xl leading-relaxed text-c-black my-8;
 }

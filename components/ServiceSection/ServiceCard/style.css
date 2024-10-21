@@ -1,17 +1,18 @@
 .service-card__wrapper{
-    @apply w-full h-[300px] border border-c-blue-dark grid place-items-center cursor-pointer overflow-hidden relative hover:opacity-80;
+    @apply w-full h-[300px] border border-c-blue-dark grid place-items-center cursor-pointer overflow-hidden relative hover:opacity-80 px-8 md:px-4;
 }
 
 .service-card__content{
     @apply text-c-blue-dark flex flex-col items-center z-10;
 }
-.service-card__title{
-    @apply text-3xl;
-}
+
 .service-card__icon{
-    @apply w-[30px] mb-8;
+    @apply aspect-square mb-8;
 }
 
+.service-card__title{
+    @apply text-3xl text-center;
+}
 
 /* Circle Gradient Overlay */
 

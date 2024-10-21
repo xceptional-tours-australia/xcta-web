@@ -1,10 +1,10 @@
-import { faFacebookF } from "@fortawesome/free-brands-svg-icons"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import Image from 'next/image';
 import './style.css';
 
 
 interface ServiceCardProps {
     data: {
+        id: number;
         icon: string;
         title: string;
     },
@@ -37,7 +37,13 @@ export default function ServiceCard({data:{icon, title}, index}:ServiceCardProps
     return (
         <div className={`service-card__wrapper ${styleCardPerIndex[index]}`}>
             <div className="service-card__content">
-                {icon && <FontAwesomeIcon icon={faFacebookF} className="service-card__icon"/>}
+                {icon &&   <Image
+                src={icon}
+                alt={`${title} image`}
+                className='service-card__icon'
+                width={70}
+                height={70}
+                />}
                 <h5 className="service-card__title">{title}</h5>
             </div>
             <CircleGradient/>

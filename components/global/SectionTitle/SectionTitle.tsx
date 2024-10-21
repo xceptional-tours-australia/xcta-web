@@ -6,9 +6,9 @@ interface SectionTitleProps{
 }
 
 const textPosition: { [char: string]: string } = {
-    start: 'md:text-left',
-    center: 'md:text-center',
-    end: 'md:text-right',
+    start: 'lg:text-left',
+    center: 'lg:text-center',
+    end: 'lg:text-right',
 }
 
 export default function SectionTitle({title, position = 'start'}: SectionTitleProps){

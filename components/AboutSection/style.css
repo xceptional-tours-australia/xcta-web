@@ -1,5 +1,5 @@
 .about-section__container{
-    @apply grid grid-cols-1 md:grid-cols-2 gap-8 text-center md:text-start;
+    @apply grid grid-cols-1 md:grid-cols-2 gap-8 text-center px-20 md:text-start md:px-0;
 }
 
 .about-section__img-wrapper{

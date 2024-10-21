@@ -9,11 +9,13 @@ import { services as serviceData} from "@/lib/dummyData";
 import ServiceCardDetail from "./ServiceCardDetail/ServiceCardDetail";
 import SectionTitle from "../global/SectionTitle/SectionTitle";
 import ServiceCard from "./ServiceCard/ServiceCard";
+import { getServices } from '@/lib/strapi';
 
-export default function ServiceSection()
+export default async function ServiceSection()
 {
-    const services = serviceData.slice(0,4);
-    services.push({icon:'', title:'View All Services'});
+    let services = await getServices();
+    services = services.slice(0,4);
+    services.push({id: -1, icon:'', title:'View All Services'});
 
    return  (
     <section className="section-wrapper pb-24">
