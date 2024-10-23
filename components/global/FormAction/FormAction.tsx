@@ -17,6 +17,9 @@ import { isValidPhoneNumber } from "react-phone-number-input";
 import { Textarea } from '@/components/ui/textarea';
 import { Checkbox } from '@/components/ui/checkbox';
 import { Button } from '@/components/ui/button';
+import { Toaster } from "@/components/ui/toaster";
+import { useToast } from "@/hooks/use-toast";
+import { useState} from "react";
 
 const FormActionSchema = z.object({
     firstName: z.string().min(3),
@@ -29,6 +32,9 @@ const FormActionSchema = z.object({
 
 export default function FormAction()
 {
+    const [loading, setLoading] = useState(false);
+    const { toast } = useToast();
+
     const form = useForm<z.infer<typeof FormActionSchema>>({
         resolver: zodResolver(FormActionSchema),
         defaultValues: { 
@@ -43,10 +49,25 @@ export default function FormAction()
 
       const onSubmit = async (values: z.infer<typeof FormActionSchema>) => {
         try {
-            console.log(values);
+            setLoading(true);
+            const response = await fetch('/api/email', {
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json',
+                },
+                method: 'POST',
+                body: JSON.stringify(values)
+            })
 
+            if(response.status != 200)
+                throw new Error("Send Email Failed!");
+                
+            form.reset();
+            toast({title: 'Send Email Success!', variant: 'success'});
         } catch (error) {
+            toast({title: 'Send Email Failed!', variant: 'failed'})
         } finally {
+            setLoading(false);
         }
     }
 
@@ -136,7 +157,8 @@ export default function FormAction()
                         </FormItem>
                     )}
                     />
-                    <Button className='w-full !mt-16' type='submit'>Send Enquiry</Button>
+                    <Button className='w-full !mt-16' type='submit' disabled={loading}>Send Enquiry</Button>
+                    <Toaster />
             </form>
         </Form>
     )
