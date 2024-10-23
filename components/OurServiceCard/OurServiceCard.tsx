@@ -16,7 +16,7 @@ function CircleGradient() {
   return (
     <div className="our-service-card__overlay-gradient">
       <div className="our-service-card__circle-1 our-service-card__overlay-circle-gradient"></div>
-      <div className="our-service-card__circle-2 service-card__overlay-circle-gradient"></div>
+      <div className="our-service-card__circle-2 our-service-card__overlay-circle-gradient"></div>
       <div className="our-service-card__circle-3 our-service-card__overlay-circle-gradient"></div>
       <div className="our-service-card__circle-4 our-service-card__overlay-circle-gradient"></div>
     </div>
