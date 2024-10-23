@@ -1,4 +1,7 @@
 .oservices {
-  @apply
-  text-[1.6rem]
+  @apply text-[1.6rem];
+}
+
+.our-service-item {
+  @apply my-[20rem];
 }
