@@ -6,6 +6,8 @@ import { cva, type VariantProps } from "class-variance-authority"
 import { X } from "lucide-react"
 
 import { cn } from "@/lib/utils"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faX } from "@fortawesome/free-solid-svg-icons"
 
 const Sheet = SheetPrimitive.Root
 
@@ -65,8 +67,10 @@ const SheetContent = React.forwardRef<
       {...props}
     >
       {children}
-      <SheetPrimitive.Close className="absolute right-10 top-8 cursor-pointer">
+      <SheetPrimitive.Close className="absolute right-10 top-8 cursor-pointer button__corner">
         <span className="text-lg text-red-600 font-semibold transition duration-300 hover:text-red-800">Close</span>
+
+        <FontAwesomeIcon className="min-tablet:hidden" icon={faX} />
       </SheetPrimitive.Close>
     </SheetPrimitive.Content>
   </SheetPortal>

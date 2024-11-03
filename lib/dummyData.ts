@@ -6,10 +6,30 @@ export const menus = [
   {
     title: "Our Services",
     url: "/our-services",
+    subMenus: [
+      {
+        title: "Our Services 1",
+        url: "/our-services",
+      },
+      {
+        title: "Our Services 2",
+        url: "/our-services",
+      },
+      {
+        title: "Our Services 3",
+        url: "/our-services",
+      }
+    ]
   },
   {
     title: "About Us",
     url: "/about-us",
+    subMenus: [
+      {
+        title: "Our Team",
+        url: "/our-team",
+      },
+    ]
   },
 ];
 

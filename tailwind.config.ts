@@ -83,6 +83,11 @@ const config = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
+      screens: {
+        'min-phone': '1024px',
+        'min-tablet': '1024px',
+        'min-desktop': '1024px',
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],

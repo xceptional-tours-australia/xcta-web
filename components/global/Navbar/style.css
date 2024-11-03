@@ -11,6 +11,11 @@
   /* bg-c-white */
 }
 
+.navbar--others {
+  @apply
+  bg-c-white
+}
+
 .navbar--hidden {
   @apply
   -translate-y-[100%]
@@ -18,6 +23,14 @@
   ease-out
   duration-500
 }
+
+/* .navbar--scrolled-home {
+  @apply
+  bg-c-white
+  transition-all
+  ease-in-out
+  duration-500
+} */
 
 .navbar--scrolled {
   @apply
@@ -34,18 +47,25 @@
   flex
   justify-between
   /* bg-c-white */
-  h-[10rem]
-  px-[4rem]
+  h-[8rem]
   items-center
   max-w-[144rem]
   mx-auto
+  px-[2rem]
+  min-tablet:px-[4rem]
+  min-tablet:h-[10rem]
 }
 
 .navbar__logo,
 .navbar__items,
+.getintouch {
+  @apply  
+  flex-1
+}
+
 .navbar__action {
   @apply
-  flex-1
+  min-tablet:hidden
 }
 
 .navbar__logo {
@@ -54,32 +74,57 @@
   flex
   justify-start
 }
+
+.navbar__logo img {
+  @apply
+  w-fit
+  h-[3.5rem]
+  min-tablet:h-[4.5rem]
+}
+
 .navbar__items {
   @apply
   /* border */
-  flex
   justify-center
   text-[1.6rem]
   gap-[4rem]
+  hidden
+  min-tablet:flex
 }
 
-.navbar__item {
+.navbar__wrapper {
+  @apply
+  relative
+}
+
+.navbar__item,
+.navbar__dropdown-item {
   @apply
   /* border */
   flex
   items-center
   gap-[1rem]
+  /* border-yellow-500 */
 }
 
-.navbar__item a {
+.navbar__item a,
+.navbar__dropdown-item a {
   @apply
   text-c-font-color-main/70
   /* text-c-white/70 */
   transition-all
   ease-in
+  whitespace-nowrap
 }
 
-.navbar__item--active a {
+.navbar__item a:hover,
+.navbar__dropdown-item a:hover {
+  @apply
+  text-c-font-color-main
+}
+
+.navbar__item--active a,
+.navbar__dropdown-item--active a {
   @apply
   text-c-font-color-main
   /* text-c-white */
@@ -105,7 +150,8 @@
   text-c-black
 }
 
-.navbar__item-dot {
+.navbar__item-dot,
+.navbar__dropdown-dot {
   @apply
   w-[.4rem]
   h-[.4rem]
@@ -115,13 +161,206 @@
   ease-in
 }
 
-.navbar__item--active .navbar__item-dot {
+.navbar__item--active .navbar__item-dot,
+.navbar__dropdown-item--active .navbar__dropdown-dot {
   @apply
   bg-c-variant-orange
 }
-.navbar__action {
+
+.getintouch {
+  @apply
+  /* border */
+  justify-end
+  hidden
+  min-tablet:flex
+}
+
+/* .navbar__wrapper {
+  @apply
+  border
+} */
+
+.navbar__dropdown {
+  @apply
+  absolute
+  top-[100%]
+  left-0
+  /* border */
+  translate-x-[50%]
+  transition-all
+  opacity-0
+  pointer-events-none
+  pt-[1rem]
+}
+
+.navbar__dropdown-wrapper {
   @apply
   /* border */
   flex
-  justify-end
+  flex-col
+  gap-[1rem]
+  p-[2rem]
+  pr-[3rem]
+  bg-c-white
+  rounded-[.5rem]
+}
+
+.navbar__item:hover ~ .navbar__dropdown {
+  @apply
+  opacity-100
+  translate-x-0
+  pointer-events-auto
+}
+
+.navbar__dropdown:hover {
+  @apply
+  opacity-100
+  translate-x-0
+  pointer-events-auto
+}
+
+.navbar__trigger {
+  @apply
+  /* border */
+  /* border-red-50 */
+  flex
+  justify-center
+  items-center
+  p-[1rem]
+  translate-x-[1rem]
+}
+
+/* .test-aja {
+  @apply
+  border
+  border-black
+} */
+
+.navbar__trigger button {
+  @apply
+  hidden
+}
+
+/* .navbar__trigger svg:nth-child(2) {
+  @apply
+
+}
+
+.navbar__burger--active {
+  @apply
+
+} */
+
+.navbar__burger {
+  @apply
+  /* border */
+  relative
+  /* border-red-500 */
+  flex
+  justify-center
+  items-center
+  w-[2.2rem]
+  aspect-square
+  /* p-[1rem] */
+  /* translate-x-[1rem] */
+}
+
+.navbar__burger svg {
+  @apply
+  absolute
+  text-c-white
+  text-[2.2rem]
+  cursor-pointer
+  transition-all
+  ease-in-out
+}
+
+.navbar--others .navbar__burger svg,
+.navbar--scrolled .navbar__burger svg {
+  @apply
+  text-c-black
+}
+
+.navbar__content {
+  @apply
+  !pt-[8rem]
+  !px-[2rem]
+}
+
+.navbar__content .button__corner {
+  @apply
+  text-[2rem]
+  top-0
+  left-auto
+  w-[4.4rem]
+  max-h-[4.4rem]
+  h-fit
+  right-[1rem]
+  aspect-square
+  /* border */
+  /* border-red-500 */
+  flex
+  justify-center
+  items-center
+  p-[1rem]
+  mt-[calc((8rem/2)_-_4.4rem/2)]
+}
+
+.navbar__content .button__corner span {
+  @apply
+  hidden
+}
+
+.navbar__content .button__corner svg {
+  @apply
+  /* border */
+  /* border-red-500 */
+  cursor-pointer
+  text-c-black
+  aspect-square
+}
+
+.navbar__menus {
+  @apply
+  text-[1.6rem]
+}
+
+.navbar__solo-menu {
+  @apply
+  /* border */
+  flex
+  items-center
+}
+
+.navbar__solo-menu a {
+  @apply
+  text-c-black
+  font-semibold
+  /* border */
+  flex-1
+  py-[1rem]
+}
+
+.navbar__submenu {
+  @apply
+  /* border */
+  flex
+  flex-col
+  gap-[1rem]
+}
+
+.navbar__submenu a {
+  @apply
+  py-[1rem]
+  text-[1.4rem]
+  /* border */
+  text-c-black
+}
+
+[data-state="open"] .accordion-icon {
+  @apply rotate-180;
+}
+
+[data-state="closed"] .accordion-icon {
+  @apply rotate-0;
 }

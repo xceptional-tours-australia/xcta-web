@@ -7,14 +7,16 @@ export async function getAdvantages() {
     title: string;
     description: string;
   }[] = [];
+  
+  const url = `${process.env.NEXT_PUBLIC_API_URL}/advantages?populate=*`
 
   let response = await fetch(
-    "https://xcta-strapi-do-7jsnm.ondigitalocean.app/api/advantages?populate=*",
+    url,
     {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
-        Authorization: `Bearer ${process.env.TOKEN}`,
+        Authorization: `Bearer ${process.env.API_TOKEN}`,
         Accept: "application/json",
       },
     }
@@ -44,13 +46,15 @@ export async function getServices() {
     description: string;
   }[] = [];
 
+  const url = `${process.env.NEXT_PUBLIC_API_URL}/services?populate=*`
+
   let response = await fetch(
-    "https://xcta-strapi-do-7jsnm.ondigitalocean.app/api/services?populate=*",
+    url,
     {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
-        Authorization: `Bearer ${process.env.TOKEN}`,
+        Authorization: `Bearer ${process.env.API_TOKEN}`,
         Accept: "application/json",
       },
     }
