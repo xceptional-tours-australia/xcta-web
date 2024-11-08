@@ -1,23 +1,86 @@
 .advantage-card{
-    @apply flex gap-12 text-center flex-col lg:flex-row lg:gap-20 lg:text-start;
+    @apply 
+    flex 
+    /* gap-[3rem] */
+    min-tablet:gap-[6rem]
+    /* text-center 
+    flex-col 
+    lg:flex-row 
+    lg:gap-20 
+    lg:text-start */
+    flex-col
+    min-tablet:flex-row
+    gap-[5rem]
+    border
 }
 
 .advantage-card__img-wrapper{
-    @apply flex-1 relative z-[1] after:content-[''] after:block after:w-3/4 after:h-full after:bg-gradient-to-br after:from-65% after:from-c-blue-dark after:to-c-blue-soft  after:absolute after:-bottom-7 after:-right-7 after:z-[-1] after:rounded-2xl;
+    @apply 
+    /* flex-[2] */
+    relative z-[1] 
+    after:content-[''] 
+    after:block 
+    after:w-full
+    min-tablet:after:w-3/4 
+    after:h-full 
+    after:bg-gradient-to-br
+    after:from-65% 
+    after:from-c-blue-dark after:to-c-blue-soft  
+    after:absolute 
+    after:-bottom-[2rem]
+    min-tablet:after:-right-[2rem]
+    after:z-[-1] 
+    after:rounded-[2rem]
+    border 
+    h-fit
+    /* max-w-[46rem] */
+    border-red-500
+}
+
+.advantage-card__img-wrapper--even {
+    @apply
+    min-tablet:after:-left-[2rem]
+    after:bg-gradient-to-bl
 }
 
 .advantage-card__img{
-    @apply w-full h-[300px] object-cover object-center rounded-xl;
+    @apply 
+    w-full
+    aspect-[23/15]
+    h-[300px] 
+    object-cover 
+    object-center 
+    rounded-[2rem]
 }
 
 .advantage-card__content-wrapper{
-    @apply flex-1 py-8;
+    @apply 
+    flex-1 
+    min-tablet:pt-[3rem]
+    /* py-8 */
+    border
+    flex
+    flex-col
+    gap-[1rem]
+    min-tablet:gap-[2rem]
 }
 
 .advantage-card__content-title{
-    @apply text-c-white font-[500] text-5xl mb-8;
+    @apply 
+    text-c-white 
+    font-medium 
+    text-[2rem]
+    min-tablet:text-[3rem]
+    /* text-5xl  */
+    /* mb-8 */
 }
 
 .advantage-card__content-paragraph{
-    @apply text-c-white leading-loose lg:pe-16;
+    @apply 
+    text-c-white 
+    text-[1.4rem]
+    min-tablet:text-[1.6rem]
+    min-tablet:leading-[2.4rem]
+    /* leading-loose  */
+    /* lg:pe-16 */
 }

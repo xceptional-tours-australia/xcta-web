@@ -1,17 +1,78 @@
+.our-service-card {
+  @apply
+  h-full
+}
 .our-service-card__wrapper {
-  @apply w-full h-[500px] border border-c-blue-dark grid place-items-center cursor-pointer overflow-hidden relative hover:opacity-80 px-8 md:px-4;
+  @apply 
+  w-full 
+  border 
+  h-full
+  min-h-[50rem]
+  border-c-blue-dark 
+  grid 
+  /* place-items-center  */
+  cursor-pointer 
+  overflow-hidden 
+  relative 
+  hover:opacity-80 
+  px-8 
+  py-[7rem]
+  min-tablet:px-[3rem] 
+  rounded-[2rem]
 }
 
 .our-service-card__content {
-  @apply text-c-blue-dark flex flex-col items-center z-10 p-[2.7rem];
+  @apply 
+  text-c-black 
+  flex 
+  flex-col 
+  items-center 
+  z-10 
+  gap-[2rem]
+}
+
+.our-service-card__head {
+  @apply
+  border
+  border-red-500
+  min-h-[14.5rem]
+  flex
+  justify-start
+  items-center
+  flex-col
+  gap-[3rem]
 }
 
 .our-service-card__icon {
-  @apply aspect-square mb-8;
+  @apply aspect-square h-[4.5rem] border
 }
 
 .our-service-card__title {
-  @apply text-3xl text-center;
+  @apply text-[2.4rem] text-center leading-[3.4rem] text-c-blue-dark
+}
+
+.our-service-card__body {
+  @apply
+  flex
+  flex-col
+  gap-[4rem]
+  justify-between
+  flex-1
+}
+
+.our-service-card__body div p {
+  @apply
+  text-[1.6rem]
+  leading-[2.4rem]
+  line-clamp-6
+}
+
+
+
+.our-service-card__body .our-service-car__rm {
+  @apply
+  text-c-variant-orange
+  text-[1.4rem]
 }
 
 /* Circle Gradient Overlay */

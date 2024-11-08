@@ -8,6 +8,7 @@ import {
     SheetTrigger,
 } from "@/components/ui/sheet";
 import FormAction from "../FormAction/FormAction"
+import "./style.css"
 
 type GetInTouchProps = {
   title: string;
@@ -17,8 +18,8 @@ function GetInTouch({ title } : GetInTouchProps) {
   return (
     <div className="getintouch">
       <Sheet>
-        <SheetTrigger asChild>
-          <Button>{ title }</Button>
+        <SheetTrigger className="sheet-trigger" asChild>
+          <Button size="lg">{ title }</Button>
         </SheetTrigger>
 
         <SheetContent>

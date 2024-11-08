@@ -68,6 +68,11 @@
   min-tablet:hidden
 }
 
+.navbar .icon-x {
+  @apply
+  hidden
+}
+
 .navbar__logo {
   @apply
   /* border */
@@ -167,7 +172,7 @@
   bg-c-variant-orange
 }
 
-.getintouch {
+.navbar .getintouch {
   @apply
   /* border */
   justify-end

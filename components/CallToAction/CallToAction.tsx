@@ -1,6 +1,7 @@
 import React from "react"
 import "./style.css"
 import { Button } from "../ui/button"
+import GetInTouch from "../global/GetInTouch/GetInTouch"
 
 export default function CallToAction() {
   return (
@@ -13,7 +14,8 @@ export default function CallToAction() {
           <p className="cta__text">Thank you for your interest in Xceptional Tours Australia. For questions, booking assistance, or custom itineraries, our team is here to help. Please use the contact form below to reach us.</p>
         </div>
 
-        <Button size="lg">Get In Touch</Button>
+        {/* <Button size="lg">Get In Touch</Button> */}
+        <GetInTouch title="Get In Touch" />
       </div>
     </section>
   )

@@ -25,10 +25,13 @@
 .cta__content {
   @apply
   /* border */
+  relative
+  z-10
   flex
   flex-col
   gap-[6rem]
   items-center
+  px-[2rem]
 }
 
 .cta__texts {
@@ -44,14 +47,15 @@
 
 .cta__title {
   @apply
-  text-[4rem]
+  text-[3rem]
+  min-tablet:text-[4rem]
   font-semibold
 }
 
 .cta__text {
   @apply
-  text-[1.6rem]
-  max-w-[60%]
-  leading-[2.8rem]
+  text-[1.4rem]
+  min-tablet:max-w-[60%]
+  min-tablet:leading-[2.8rem]
   /* border */
 }

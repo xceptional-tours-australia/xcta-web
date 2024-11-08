@@ -84,7 +84,7 @@ const config = {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
       screens: {
-        'min-phone': '1024px',
+        'min-phone': '550px',
         'min-tablet': '1024px',
         'min-desktop': '1024px',
       },

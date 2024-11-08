@@ -2,13 +2,24 @@
   @apply
   flex
   flex-col
-  /* gap-[6rem] */
+  gap-[6rem]
+}
+
+.mission__head {
+  @apply
+  text-[3rem]
+  min-tablet:text-[4rem]
+  font-semibold
+  text-c-blue-dark
 }
 
 .mission__body {
   @apply
   flex
-  gap-[10rem]
+  min-tablet:gap-[10rem]
+  gap-[4rem]
+  flex-col
+  min-tablet:flex-row
 }
 
 .mission__image {
@@ -33,6 +44,8 @@
   aspect-square
   right-[-25%]
   bottom-[-25%]
+  hidden
+  min-tablet:block
 }
 
 .mission__information {
@@ -45,7 +58,8 @@
 
 .mission__title {
   @apply
-  text-[3.2rem]
+  text-[2rem]
+  min-tablet:text-[3.2rem]
   font-medium
 }
 

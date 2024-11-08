@@ -1,78 +1,107 @@
-"server-only";
+export async function getServices() {
+  const apiUrl = `${process.env.NEXT_PUBLIC_API_URL}/services?populate=*`;
 
-export async function getAdvantages() {
-  const advantages: {
-    id: number;
-    img: string;
-    title: string;
-    description: string;
-  }[] = [];
-  
-  const url = `${process.env.NEXT_PUBLIC_API_URL}/advantages?populate=*`
-
-  let response = await fetch(
-    url,
-    {
+  try {
+    const response = await fetch(apiUrl, {
       method: "GET",
       headers: {
+        Authorization: `Bearer ${process.env.NEXT_PUBLIC_API_TOKEN}`,
         "Content-Type": "application/json",
-        Authorization: `Bearer ${process.env.API_TOKEN}`,
-        Accept: "application/json",
       },
-    }
-  );
-
-  const allData = (await response.json())["data"];
-
-  if (response.status != 200 || allData.length <= 0) return advantages;
-
-  allData.forEach((data: any) => {
-    advantages.push({
-      id: data.id,
-      img: data.image.url,
-      title: data.title,
-      description: data.description,
+      cache: "no-store",
     });
-  });
 
-  return advantages;
+    if (!response.ok) {
+      throw new Error(`Error fetching products: ${response.status}`);
+    }
+
+    const data = await response.json();
+    const services = data.data    
+
+    return services;
+  } catch (error) {
+    console.error("Error fetching products:", error);
+    throw error;
+  }
 }
 
-export async function getServices() {
-  const services: {
-    id: number;
-    icon: string;
-    title: string;
-    description: string;
-  }[] = [];
+export async function getAdvantages() {
+  const apiUrl = `${process.env.NEXT_PUBLIC_API_URL}/advantages?populate=*`;
 
-  const url = `${process.env.NEXT_PUBLIC_API_URL}/services?populate=*`
-
-  let response = await fetch(
-    url,
-    {
+  try {
+    const response = await fetch(apiUrl, {
       method: "GET",
       headers: {
+        Authorization: `Bearer ${process.env.NEXT_PUBLIC_API_TOKEN}`,
         "Content-Type": "application/json",
-        Authorization: `Bearer ${process.env.API_TOKEN}`,
-        Accept: "application/json",
       },
-    }
-  );
-
-  const allData = (await response.json())["data"];
-
-  if (response.status != 200 || allData.length <= 0) return services;
-
-  allData.forEach((data: any) => {
-    services.push({
-      id: data.id,
-      icon: data.logo.url,
-      title: data.title,
-      description:
-        "At Xceptional Tours Australia, we understand that every traveller is unique. That's why we offer Bespoke Tour Packages designed to meet your specific interests, preferences, and needs.",
+      cache: "no-store",
     });
-  });
 
-  return services;
+    if (!response.ok) {
+      throw new Error(`Error fetching products: ${response.status}`);
+    }
+
+    const data = await response.json();
+    const services = data.data 
+
+    return services;
+  } catch (error) {
+    console.error("Error fetching products:", error);
+    throw error;
+  }
+}
+
+export async function getOurTeams() {
+  const apiUrl = `${process.env.NEXT_PUBLIC_API_URL}/our-teams?populate=*`;
+
+  try {
+    const response = await fetch(apiUrl, {
+      method: "GET",
+      headers: {
+        Authorization: `Bearer ${process.env.NEXT_PUBLIC_API_TOKEN}`,
+        "Content-Type": "application/json",
+      },
+      cache: "no-store",
+    });
+
+    if (!response.ok) {
+      throw new Error(`Error fetching products: ${response.status}`);
+    }
+
+    const data = await response.json();
+    const services = data.data 
+
+    return services;
+  } catch (error) {
+    console.error("Error fetching products:", error);
+    throw error;
+  }
+}
+
+export async function getTestimonials() {
+  const apiUrl = `${process.env.NEXT_PUBLIC_API_URL}/testimonials?populate=*`;
+
+  try {
+    const response = await fetch(apiUrl, {
+      method: "GET",
+      headers: {
+        Authorization: `Bearer ${process.env.NEXT_PUBLIC_API_TOKEN}`,
+        "Content-Type": "application/json",
+      },
+      cache: "no-store",
+    });
+
+    if (!response.ok) {
+      throw new Error(`Error fetching products: ${response.status}`);
+    }
+
+    const data = await response.json();
+    const services = data.data 
+
+    return services;
+  } catch (error) {
+    console.error("Error fetching products:", error);
+    throw error;
+  }
 }

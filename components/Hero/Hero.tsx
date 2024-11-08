@@ -13,7 +13,7 @@ export default function Hero() {
 
         <div className="hero__texts">
           <h1 className="hero__title">
-            <strong>Your Gateway to<br />Extraordinary<br /></strong> <em>Australian</em> <strong>Journeys</strong>
+            <strong>Your Gateway to <br /> Extraordinary <br /> </strong><em>Australian</em> <strong>Journeys</strong>
           </h1>
 
           <p className="hero__text">Personalized Tours for the Adventurous Spirit</p>

@@ -1,17 +1,36 @@
 .service-card__wrapper{
-    @apply w-full h-[300px] border border-c-blue-dark grid place-items-center cursor-pointer overflow-hidden relative hover:opacity-80 px-8 md:px-4;
+    @apply 
+    w-full 
+    min-h-[300px] 
+    /* border  */
+    /* border-c-blue-dark  */
+    grid 
+    place-items-center 
+    cursor-pointer 
+    overflow-hidden 
+    relative 
+    hover:opacity-80 
+    px-8 
+    md:px-4
 }
 
 .service-card__content{
-    @apply text-c-blue-dark flex flex-col items-center z-10;
+    @apply 
+    text-c-blue-dark 
+    flex 
+    flex-col
+    gap-[3rem]
+    items-center 
+    z-10
 }
 
 .service-card__icon{
-    @apply aspect-square mb-8;
+    @apply 
+    h-[4.5rem]
 }
 
 .service-card__title{
-    @apply text-3xl text-center;
+    @apply text-3xl text-center
 }
 
 /* Circle Gradient Overlay */
@@ -39,3 +58,4 @@
 .service-card__circle-4{
    @apply w-[350px] h-[350px]; 
 }
+

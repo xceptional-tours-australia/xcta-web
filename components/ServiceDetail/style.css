@@ -1,31 +1,60 @@
 .service-detail__content {
-  @apply py-[20rem];
+  @apply flex flex-col gap-[8rem]
+}
+
+.service-detail__container {
+  @apply
+  flex
+  flex-col
+  gap-[3rem]
+  min-tablet:gap-[6rem]
 }
 
 .service-detail__content-header {
   @apply flex 
   items-center 
   justify-between
-  mb-[6rem];
 }
 
 .service-detail__content-header_title {
-  @apply flex items-center gap-4;
+  @apply 
+  flex 
+  items-center 
+  gap-[2rem] 
+  text-[4rem]
+}
+
+.service-detail__backlink {
+  @apply
+  hidden
+  min-tablet:block
 }
 
 .service-detail__content-header_icon {
   @apply border 
   border-c-blue-dark 
-  p-4 
-  rounded-lg
-  text-c-blue-dark;
+  h-[6rem]
+  w-[6rem]
+  aspect-square
+  flex
+  justify-center
+  items-center
+  rounded-[1rem]
+}
+
+.service-detail__content-header_icon img {
+  @apply
+  max-h-[2.5rem]
 }
 
 .service-detail__content-title {
-  @apply text-[4rem] 
-    text-c-blue-dark 
-    font-medium;
+  @apply 
+  text-[2.8rem]
+  min-tablet:text-[4rem] 
+  text-c-blue-dark 
+  font-medium;
 }
+
 
 .service-detail__content-navigation {
   @apply p-0 
@@ -35,15 +64,53 @@
 }
 
 .service-detail__content-img-wrapper {
-  @apply w-full h-[60rem];
+  @apply 
+  w-full 
+  h-[40rem]
+  min-tablet:h-[60rem] 
+  relative
 }
 
 .service-detail-content__img {
   @apply rounded-3xl
-  h-full;
+  w-full
+  h-full
+  object-cover
 }
 
 .service-detail__content-desc {
-  @apply mt-[4rem]
+  @apply 
+  /* mt-[4rem] */
   text-[1.6rem];
+}
+
+.service-detail__footer {
+  @apply
+  border
+  flex
+  justify-end
+}
+
+.service-detail__next {
+  @apply
+  border
+  border-black
+  flex
+  flex-col
+  gap-[.5rem]
+  min-tablet:gap-[1rem]
+}
+
+.service-detail__next span:nth-child(1) {
+  @apply
+  text-[1.4rem]
+  text-c-font-color-secondary-1
+}
+
+.service-detail__next span:nth-child(2) {
+  @apply
+  text-[1.6rem]
+  min-tablet:text-[1.8rem]
+  font-medium
+  text-c-font-color-main
 }

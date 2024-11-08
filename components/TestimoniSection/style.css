@@ -1,3 +1,14 @@
 .testimoni-section__container {
-  @apply flex w-max space-x-16;
+  @apply 
+  flex 
+  w-max 
+  space-x-16
+  border
+  border-green-50
+}
+
+.testi__carousel {
+  @apply
+  border
+  border-red-500
 }

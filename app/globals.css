@@ -88,11 +88,20 @@ body {
 
 .section-wrapper {
   @apply
-  /* border */
-  /* border-red-500 */
+  border
+  border-red-500
   w-full
   max-w-[144rem]
   mx-auto
+  px-[2rem]
   md:px-[8rem]
   lg:px-[14rem]
+}
+
+.title {
+  @apply
+  text-[2.8rem]
+  min-tablet:text-[4rem]
+  font-semibold
+  text-c-blue-dark
 }

@@ -3,20 +3,20 @@ import "./style.css";
 
 interface ServiceCardProps {
   data: {
-    id: number;
+    // id: number;
     icon: string;
     title: string;
   };
-  index: number;
+  // index: number;
 }
 
-const styleCardPerIndex = [
-  "lg:col-start-2 lg:rounded-tl-[20px]",
-  "lg:rounded-tr-[20px]",
-  "lg:rounded-s-[20px]",
-  "",
-  "lg:rounded-ee-[20px]",
-];
+// const styleCardPerIndex = [
+//   "lg:col-start-2 lg:rounded-tl-[20px]",
+//   "lg:rounded-tr-[20px]",
+//   "lg:rounded-s-[20px]",
+//   "",
+//   "lg:rounded-ee-[20px]",
+// ];
 
 function CircleGradient() {
   return (
@@ -29,24 +29,26 @@ function CircleGradient() {
   );
 }
 
-export default function ServiceCard({
-  data: { icon, title },
-  index,
-}: ServiceCardProps) {
+// export default function ServiceCard({ data: { icon, title }, index,}: ServiceCardProps) {
+export default function ServiceCard({ data = false } : any) {
+  // console.log(JSON.stringify(data?.logo?.url, null, 2))
   return (
-    <div className={`service-card__wrapper ${styleCardPerIndex[index]}`}>
+    // <div className={`service-card__wrapper ${styleCardPerIndex[index]}`}>
+    <div className={`service-card__wrapper`}>
       <div className="service-card__content">
-        {icon && (
+        {data?.logo?.url && (
           <Image
-            src={icon}
-            alt={`${title} image`}
+            src={data?.logo?.url}
+            alt={`${data.title} image`}
             className="service-card__icon"
             width={70}
             height={70}
           />
         )}
-        <h5 className="service-card__title">{title}</h5>
+        
+        <h5 className="service-card__title">{data ? data.title : "View All Services"}</h5>
       </div>
+
       <CircleGradient />
     </div>
   );

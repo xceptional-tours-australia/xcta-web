@@ -28,7 +28,7 @@ type NavbarClientProps = {
 };
 
 
-export default function NavbarClient({ data } : NavbarClientProps) {
+export default function NavbarClient({ data } : any) {
   const pathname = usePathname()
   const [isScrolling, setIsScrolling] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -40,7 +40,7 @@ export default function NavbarClient({ data } : NavbarClientProps) {
     if (menu.title === "Our Services") {
       return {
         ...menu,
-        subMenus: data.map(item => ({
+        subMenus: data.map((item : any) => ({
           title: item.title,
           url: `/our-services/${item.id}`,
         }))
@@ -98,7 +98,7 @@ export default function NavbarClient({ data } : NavbarClientProps) {
               {menu.subMenus && (
                 <div className="navbar__dropdown">
                   <div className="navbar__dropdown-wrapper">
-                    {menu.subMenus.map((submenu, n) => (
+                    {menu.subMenus.map((submenu:any, n:any) => (
                       <div 
                         className={pathname === submenu.url ? "navbar__dropdown-item navbar__dropdown-item--active" : "navbar__dropdown-item"} 
                         key={n}
@@ -137,7 +137,7 @@ export default function NavbarClient({ data } : NavbarClientProps) {
                           </AccordionTrigger>
                           
                           <AccordionContent className="navbar__submenu">
-                            {item.subMenus.map((subItem, subIndex) => (
+                            {item.subMenus.map((subItem:any, subIndex:any) => (
                               <Link key={subIndex} href={subItem.url} onClick={closeSheet}>
                                 {subItem.title}
                               </Link>

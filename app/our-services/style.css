@@ -5,3 +5,12 @@
 .our-service-item {
   @apply my-[20rem];
 }
+
+.ourservices__cards {
+  @apply
+  grid 
+  grid-cols-1
+  min-phone:grid-cols-2
+  min-tablet:grid-cols-3 
+  gap-[3rem]
+}

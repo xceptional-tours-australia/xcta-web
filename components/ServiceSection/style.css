@@ -1,3 +1,85 @@
-.service-section__container{
-    @apply grid grid-cols-1 gap-20 md:grid-cols-2 px-20 md:gap-[0.5px] lg:grid-cols-3 md:px-0;
+.service {
+    @apply
+    border
+    border-green-500
+    flex-col
+    flex
+    gap-[6rem]
+    py-[10rem]
+}
+
+/* .service-section__container{
+    @apply 
+    grid 
+    grid-cols-1 
+    gap-20 
+    md:grid-cols-2 
+    px-20 
+    md:gap-[0.5px] 
+    lg:grid-cols-3 
+    md:px-0
+    grid
+    grid-cols-3
+
+    border
+    border-red-500
+} */
+
+.service .title {
+    @apply
+    text-right
+    border
+    w-full
+    inline-block
+}
+
+.service__boxes {
+    @apply
+    border
+}
+
+.service__container {
+    @apply
+    grid 
+    w-full 
+    grid-cols-1 
+    min-tablet:grid-cols-3
+}
+
+.service__wrapper-1 {
+    @apply
+    flex 
+    border 
+    border-c-blue-dark 
+    w-full 
+    flex-col 
+    min-tablet:flex-row 
+    divide-y 
+    min-tablet:divide-y-0 
+    min-tablet:col-span-2 
+    min-tablet:col-end-4 
+    overflow-hidden 
+    rounded-tl-[2rem] 
+    rounded-tr-[2rem] 
+    min-tablet:divide-x 
+    divide-c-blue-dark 
+    border-b-0
+}
+
+.service__wrapper-2 {
+    @apply
+    grid 
+    w-full 
+    min-tablet:divide-x 
+    divide-y 
+    min-tablet:divide-y-0 
+    divide-c-blue-dark 
+    grid-cols-1 
+    min-tablet:grid-cols-3 
+    border 
+    border-c-blue-dark 
+    min-tablet:rounded-tl-[2rem] 
+    rounded-bl-[2rem] 
+    rounded-br-[2rem] 
+    overflow-hidden
 }

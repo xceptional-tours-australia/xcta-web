@@ -1,7 +1,9 @@
+"use client"
 import Image from "next/image";
 import "./style.css";
 import { Button } from "../ui/button";
 import Link from "next/link";
+import { useEffect } from "react";
 
 interface OurServiceCardProps {
   data: {
@@ -23,39 +25,43 @@ function CircleGradient() {
   );
 }
 
-export default function OurServiceCard({
-  data: { icon, title, description },
-}: OurServiceCardProps) {
+export default function OurServiceCard({data}: any) {
+
+  useEffect(() => {
+  // console.log("icon = ", other)
+}, [])
+
   return (
-    <div className={`our-service-card__wrapper rounded-lg`}>
-      <div className="our-service-card__content">
-        {icon && (
-          <Image
-            src={icon}
-            alt={`${title} image`}
-            className="our-service-card__icon"
-            width={70}
-            height={70}
-          />
-        )}
-        <h5 className="our-service-card__title">{title}</h5>
-        <div className="mt-[5rem]">
-          <h5>{description}</h5>
+    <Link href={`/our-services/${data.id}`} className="our-service-card">
+      <div className="our-service-card__wrapper">
+        <div className="our-service-card__content">
+          <div className="our-service-card__head">
+            {data?.logo?.url && (
+              <Image
+                src={data.logo?.url}
+                alt={`${data.title} image`}
+                className="our-service-card__icon"
+                width={70}
+                height={70}
+              />
+            )}
+            
+            <h5 className="our-service-card__title">{data.title}</h5>
+          </div>
+          
+          <div className="our-service-card__body">
+            {/* <h5>{description}</h5> */}
+            <div dangerouslySetInnerHTML={{ __html: data.description }} />
+            
+            <span className="our-service-car__rm">Read More</span>
+            {/* <Link href={"/our-services/123"}>
+              Read More
+            </Link> */}
+          </div>
         </div>
 
-        <div className="w-full">
-          <Link href={"/our-services/123"}>
-            <Button
-              variant={"link"}
-              type="button"
-              className="p-0 text-[1.4rem] text-c-variant-orange"
-            >
-              Read More
-            </Button>
-          </Link>
-        </div>
+        <CircleGradient />
       </div>
-      <CircleGradient />
-    </div>
+    </Link>
   );
 }

@@ -23,7 +23,8 @@
 .sitemap__list a {
   @apply
   text-c-variant-orange
-  text-[1.8rem]
+  text-[1.6rem]
+  min-tablet:text-[1.8rem]
   font-semibold
 }
 

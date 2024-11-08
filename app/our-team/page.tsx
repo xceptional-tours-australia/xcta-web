@@ -1,6 +1,7 @@
 import Banner from "@/components/Banner/Banner"
 import "./style.css"
 import { teams } from "@/lib/dummyData"
+import OurCommitmentSection from "@/components/OurCommitmentSection/OurCommitmentSection"
 
 function OurTeam() {
   return (
@@ -23,6 +24,8 @@ function OurTeam() {
           ))}
         </div>
       </section>
+
+      <OurCommitmentSection />
     </main>
   )
 }

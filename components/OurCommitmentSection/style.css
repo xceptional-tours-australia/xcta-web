@@ -1,15 +1,57 @@
-.our-commitment-section__wrapper {
-  @apply bg-[#486C9A] mt-24;
+.our-commitment-section {
+  @apply bg-[#486C9A];
+}
+
+.our-commitment-section .section-wrapper {
+  @apply
+  py-[10rem]
+  mt-0
 }
 
 .our-commitment__content-wrapper {
-  @apply flex items-center;
+  @apply 
+  flex 
+  items-center
+  flex-col
+  min-tablet:flex-row
+  gap-[4rem]
+}
+
+.our-commitment-section__image {
+  @apply
+  flex-1
+}
+
+.our-commitment-section__image img {
+  @apply
+  w-full
+  h-full
+  /* border */
+  max-h-[50rem]
+  min-tablet:max-h-full
+}
+
+.our-commitment-section__info {
+  @apply
+  flex 
+  flex-1 
+  flex-col
+  gap-[2rem]
 }
 
 .our-commitment__content-title {
-  @apply text-[4rem] md:text-[3.5rem] text-c-white font-semibold;
+  @apply 
+  text-[3rem] 
+  min-tablet:text-[4rem] 
+  text-c-white 
+  font-semibold
 }
 
 .our-commitment__content-desc {
-  @apply text-[2.2rem] md:text-[2rem] text-c-white font-normal leading-[32px];
+  @apply 
+  text-[1.6rem] 
+  min-tablet:text-[2.2rem] 
+  text-c-white 
+  font-normal 
+  min-tablet:leading-[32px]
 }

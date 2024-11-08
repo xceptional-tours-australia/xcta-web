@@ -9,7 +9,8 @@ import "./style.css"
 function OurMission() {
   return (
     <section className="mission section-wrapper">
-      <SectionTitle title="Our Mission"/>
+      {/* <SectionTitle title="Our Mission"/> */}
+      <span className='mission__head'>Our Mission</span>
       
       <div className="mission__body">
         <div className="mission__image">

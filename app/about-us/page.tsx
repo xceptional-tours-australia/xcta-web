@@ -10,10 +10,14 @@ export default function AboutUs() {
   return (
     <main className="about-us">
       <Banner />
-      <OurMission />
+      <div className="py-[10rem] min-tablet:py-[30rem]">
+        <OurMission />
+      </div>
       <Advantages />
       <ServiceSection />
-      <CallToActionAboutUs />
+      <div className="py-[20rem] min-tablet:py-[30rem]">
+        <CallToActionAboutUs />
+      </div>
     </main>
   );
 }

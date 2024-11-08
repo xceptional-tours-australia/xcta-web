@@ -68,9 +68,9 @@ const SheetContent = React.forwardRef<
     >
       {children}
       <SheetPrimitive.Close className="absolute right-10 top-8 cursor-pointer button__corner">
-        <span className="text-lg text-red-600 font-semibold transition duration-300 hover:text-red-800">Close</span>
+        {/* <span className="text-lg text-red-600 font-semibold transition duration-300 hover:text-red-800">Close</span> */}
 
-        <FontAwesomeIcon className="min-tablet:hidden" icon={faX} />
+        <FontAwesomeIcon className="icon-x" icon={faX} />
       </SheetPrimitive.Close>
     </SheetPrimitive.Content>
   </SheetPortal>

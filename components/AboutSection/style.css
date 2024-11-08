@@ -1,23 +1,118 @@
+.about-us {
+    @apply
+    border
+    py-[10rem]
+    min-tablet:pt-[20rem]
+    min-tablet:pb-[10rem]
+    flex
+    flex-col
+    gap-[3rem]
+    min-tablet:gap-[6rem]
+}
+
 .about-section__container{
-    @apply grid grid-cols-1 md:grid-cols-2 gap-8 text-center px-20 md:text-start md:px-0;
+    @apply 
+    /* grid 
+    grid-cols-1 
+    md:grid-cols-2 
+    gap-8 
+    text-center 
+    px-20 
+    md:text-start 
+    md:px-0 */
+    flex
+    flex-col
+    min-tablet:flex-row
+    gap-[2rem]
+    min-tablet:gap-[4rem]
+    border
+    border-red-500
 }
 
 .about-section__img-wrapper{
-    @apply w-full h-full flex justify-center;
+    @apply 
+    /* w-full  */
+    /* h-full  */
+    /* flex  */
+    /* justify-center */
+    flex-[2]
+    border
+    border-black
+    max-w-[58rem]
+    h-fit
+    relative
+    rounded-[2rem] 
+    overflow-hidden
+}
+
+.about-section__img-wrapper .circle-1 {
+    @apply
+    absolute
+    max-w-[16.2rem]
+    min-tablet:max-w-max
+    left-0
+    bottom-0
+    border
+    border-blue-500
+}
+
+.about-section__img-wrapper .circle-2 {
+    @apply
+    absolute
+    max-w-[10rem]
+    min-tablet:max-w-max
+    right-0
+    top-0
+    border
+    border-blue-500
 }
 
 .about-section__img{
-    @apply rounded-3xl shadow-sm shadow-c-blue-light object-cover;
+    @apply 
+    shadow-sm 
+    w-full
+    aspect-[290/193]
+    /* h-full */
+    /* object-cover */
 }
 
 .about-section__content{
-    @apply p-8;
+    @apply 
+    /* p-8 */
+    mt-[1.6rem]
+    flex-1
+    border
+    flex
+    flex-col
+    gap-[4rem]
+    min-tablet:gap-[6rem]
+}
+
+.about-us__texts {
+    @apply
+    flex
+    flex-col
+    gap-[2rem]
 }
 
 .about-section__title{
-    @apply font-semibold text-5xl leading-snug mb-8 text-c-black;
+    @apply 
+    font-semibold 
+    text-[2rem]
+    min-tablet:text-[3.2rem]
+    min-tablet:leading-[4.4rem]
+    /* mb-8  */
+    text-c-black
 }
 
 .about-section__paragraph{
-    @apply text-c-black font-[400] mb-16 leading-relaxed;
+    @apply 
+    text-c-black 
+    text-[1.4rem]
+    min-tablet:text-[1.6rem]
+    font-[400] 
+    min-tablet:leading-[2.4rem]
+    /* mb-16  */
+    /* leading-relaxed */
 }
+

@@ -1,15 +1,51 @@
+.advantages {
+    @apply
+    py-[10rem]
+    min-tablet:py-[20rem]
+}
 .advantages__container{
-    @apply w-full bg-c-blue-dark px-32 py-20 rounded-2xl;
+    @apply 
+    w-full 
+    bg-c-blue-dark 
+    /* px-32  */
+    /* py-20  */
+    /* rounded-2xl */
+    px-[2rem]
+    py-[5rem]
+    min-tablet:p-[10rem]
+    pb-[7rem]
+    min-tablet:pb-[12rem]
+    border
+    border-green-500
+    rounded-[2rem]
+    flex
+    flex-col
+    gap-[3rem]
+    min-tablet:gap-[8rem]
 }
 
-.advantages__section-title{
-    @apply py-16 mb-8;
+/* .advantages__section-title{
+    @apply py-16 mb-8 text-c-white
+} */
+
+.advantages__container .title {
+    @apply
+    text-c-white
 }
 
-.advantages__title{
+/* .advantages__title{
     @apply text-c-white text-6xl font-semibold text-center lg:text-start;
-}
+} */
 
 .advantages__cards{
-    @apply grid grid-cols-1 gap-16 lg:gap-32;
+    @apply 
+    /* grid 
+    grid-cols-1 
+    gap-16 
+    lg:gap-32 */
+    flex
+    flex-col
+    gap-[8rem]
+    min-tablet:gap-[18rem]
+    border
 }

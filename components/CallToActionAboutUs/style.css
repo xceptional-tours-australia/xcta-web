@@ -2,17 +2,24 @@
   @apply
   bg-c-blue-soft
   rounded-[2rem]
-  p-[10rem]
+  p-[4rem]
+  py-[6rem]
+  min-tablet:p-[10rem]
   flex
   justify-between
-  items-center
+  items-start
+  gap-[4rem]
+  min-tablet:items-center
   text-c-white
+  flex-col
+  min-tablet:flex-row
 }
 
 .cta-about-us span {
   @apply
   text-[3rem]
-  leading-[4.2rem]
+  min-tablet:text-[3rem]
+  min-tablet:leading-[4.2rem]
   font-bold
   max-w-[62rem]
 }

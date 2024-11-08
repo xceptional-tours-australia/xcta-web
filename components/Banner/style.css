@@ -2,8 +2,19 @@
   @apply
   w-full
   overflow-hidden
-  aspect-[32/10]
+  min-tablet:aspect-[32/10]
+  py-[6rem]
+  px-[2rem]
+  h-auto
+  min-tablet:h-auto
+  mt-[8rem]
+  min-tablet:mt-[10rem]
   relative
+  flex
+  justify-center
+  items-center
+  border
+  border-red-500
 }
 
 .banner::after {
@@ -16,25 +27,101 @@
   z-0
 }
 
+.our-team::after {
+  @apply
+  min-tablet:hidden
+  bg-gradient-to-t to-100% from-c-white via-40% via-c-white to-c-white/0
+}
+
 .banner__image {
   @apply
   absolute
-  inset-0
+  /* inset-0 */
   top-1/2 
   left-1/2 
-  w-full 
-  h-full 
-  object-cover 
+  /* w-full */
+  /* h-full */
+  object-cover
   transform 
   -translate-x-1/2 
   -translate-y-1/2
-  z-0
+  z-0;
 }
+
+/* .banner__image {
+  @apply
+  absolute
+  top-1/2 
+  left-1/2
+  object-cover
+  transform 
+  -translate-x-1/2 
+  -translate-y-1/2
+  z-0;
+} */
+
+.our-services .banner__image {
+  @apply
+  min-tablet:-translate-y-[37%]
+}
+
+/* .about-us .banner__image {
+  @apply
+  inset-0
+  w-full
+  top-1/2 
+  left-1/2 
+  h-full
+} */
+
+.our-team .banner__image {
+  @apply
+  inset-0
+  w-full
+  top-1/2 
+  left-1/2 
+  h-full
+}
+
+.banner__gradient::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgb(255,255,255);
+  background: linear-gradient(90deg, rgba(255,255,255,0) 6%, rgba(255,255,255,1) 25%, rgba(255,255,255,1) 77%, rgba(255,255,255,0) 91%);
+}
+
+.banner__gradient::after {
+  @apply
+  hidden
+  min-tablet:block
+}
+
+.our-team .banner__image:nth-child(1) {
+  @apply
+  min-tablet:-translate-x-[80%]
+  min-tablet:-translate-y-[42%]
+  min-tablet:w-[80%]
+}
+
+.our-team .banner__image:nth-child(2) {
+  @apply
+  -translate-x-[16%]
+  -translate-y-[42%]
+  w-[80%]
+  hidden
+  min-tablet:block
+}
+/* .our-team .banner__image img:nth-child(2) {
+  @apply
+  -translate-x-[50%]
+} */
 
 .banner__texts {
   @apply
-  absolute
-  inset-0
+  /* absolute */
+  /* inset-0 */
+  relative
   z-10
   text-c-white
   flex
@@ -49,16 +136,40 @@
   gap-[2rem]
   justify-center
   items-center
-  max-w-[60rem]
   text-center
+}
+
+.banner__wrapper br {
+  @apply
+  hidden
+  min-tablet:block
 }
 
 .banner__title {
   @apply
-  text-[4.8rem]
+  text-[3rem]
+  min-tablet:text-[4.8rem]
+}
+
+.our-team .banner__title {
+  @apply
+  text-c-blue-dark
 }
 
 .banner__subtitle {
   @apply
-  text-[1.6rem]
+  text-[1.2rem]
+  max-w-[60rem]
+  min-tablet:text-[1.6rem]
+}
+
+.our-team .banner__subtitle {
+  @apply
+  text-c-blue-dark
+}
+
+
+.about-us .banner__subtitle {
+  @apply
+  max-w-[82.5rem]
 }
