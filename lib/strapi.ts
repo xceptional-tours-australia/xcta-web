@@ -1,14 +1,13 @@
 export async function getServices() {
-  const apiUrl = `${process.env.NEXT_PUBLIC_API_URL}/services?populate=*`;
+  const apiUrl = `${process.env.API_URL}/services?populate=*`;
 
   try {
     const response = await fetch(apiUrl, {
       method: "GET",
       headers: {
-        Authorization: `Bearer ${process.env.NEXT_PUBLIC_API_TOKEN}`,
+        Authorization: `Bearer ${process.env.API_TOKEN}`,
         "Content-Type": "application/json",
       },
-      cache: "no-store",
     });
 
     if (!response.ok) {
@@ -26,16 +25,15 @@ export async function getServices() {
 }
 
 export async function getAdvantages() {
-  const apiUrl = `${process.env.NEXT_PUBLIC_API_URL}/advantages?populate=*`;
+  const apiUrl = `${process.env.API_URL}/advantages?populate=*`;
 
   try {
     const response = await fetch(apiUrl, {
       method: "GET",
       headers: {
-        Authorization: `Bearer ${process.env.NEXT_PUBLIC_API_TOKEN}`,
+        Authorization: `Bearer ${process.env.API_TOKEN}`,
         "Content-Type": "application/json",
       },
-      cache: "no-store",
     });
 
     if (!response.ok) {
@@ -53,16 +51,15 @@ export async function getAdvantages() {
 }
 
 export async function getOurTeams() {
-  const apiUrl = `${process.env.NEXT_PUBLIC_API_URL}/our-teams?populate=*`;
+  const apiUrl = `${process.env.API_URL}/our-teams?populate=*`;
 
   try {
     const response = await fetch(apiUrl, {
       method: "GET",
       headers: {
-        Authorization: `Bearer ${process.env.NEXT_PUBLIC_API_TOKEN}`,
+        Authorization: `Bearer ${process.env.API_TOKEN}`,
         "Content-Type": "application/json",
       },
-      cache: "no-store",
     });
 
     if (!response.ok) {
@@ -80,16 +77,15 @@ export async function getOurTeams() {
 }
 
 export async function getTestimonials() {
-  const apiUrl = `${process.env.NEXT_PUBLIC_API_URL}/testimonials?populate=*`;
+  const apiUrl = `${process.env.API_URL}/testimonials?populate=*`;
 
   try {
     const response = await fetch(apiUrl, {
       method: "GET",
       headers: {
-        Authorization: `Bearer ${process.env.NEXT_PUBLIC_API_TOKEN}`,
+        Authorization: `Bearer ${process.env.API_TOKEN}`,
         "Content-Type": "application/json",
       },
-      cache: "no-store",
     });
 
     if (!response.ok) {

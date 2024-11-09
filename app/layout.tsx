@@ -12,6 +12,8 @@ export const metadata: Metadata = {
   description: "Specializes in creating extraordinary travel experiences across Australia",
 };
 
+export const fetchCache = 'force-no-store';
+
 export default function RootLayout({
   children,
 }: Readonly<{
