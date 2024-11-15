@@ -79,7 +79,7 @@ export default function FormAction()
                 name="firstName"
                 render={({ field }) => (
                     <FormItem>
-                        <FormLabel className='text-lg uppercase'>First Name</FormLabel>
+                        <FormLabel className='text-xl uppercase'>First Name</FormLabel>
                         <FormControl>
                             <Input placeholder="John" {...field} />
                         </FormControl>
@@ -92,7 +92,7 @@ export default function FormAction()
                 name="lastName"
                 render={({ field }) => (
                     <FormItem>
-                        <FormLabel className='text-lg uppercase'>Last Name</FormLabel>
+                        <FormLabel className='text-xl uppercase'>Last Name</FormLabel>
                         <FormControl>
                             <Input placeholder="Doe" {...field} />
                         </FormControl>
@@ -105,7 +105,7 @@ export default function FormAction()
                 name="email"
                 render={({ field }) => (
                     <FormItem>
-                        <FormLabel className='text-lg uppercase'>Email Address</FormLabel>
+                        <FormLabel className='text-xl uppercase'>Email Address</FormLabel>
                         <FormControl>
                             <Input placeholder="john.tourist@gmail.com" {...field} />
                         </FormControl>
@@ -118,7 +118,7 @@ export default function FormAction()
                 name="phone"
                 render={({ field }) => (
                     <FormItem>
-                        <FormLabel className="text-lg uppercase">Telephone</FormLabel>
+                        <FormLabel className="text-xl uppercase">Telephone</FormLabel>
                         <FormControl className="w-full">
                             <PhoneInput placeholder="Enter a phone number" defaultCountry='AU' international  {...field}/>
                         </FormControl>
@@ -131,7 +131,7 @@ export default function FormAction()
                 name="message"
                 render={({ field }) => (
                     <FormItem>
-                        <FormLabel className="text-lg uppercase">Your Message</FormLabel>
+                        <FormLabel className="text-xl uppercase">Your Message</FormLabel>
                         <FormControl className="w-full">
                             <Textarea className="resize-none" placeholder='I’m interested in customizing my trip.' {...field}/>
                         </FormControl>

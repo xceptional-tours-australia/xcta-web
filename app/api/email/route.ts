@@ -12,7 +12,7 @@ export async function POST( req: Request)
         headers: {
             'Accept': 'application/json',
             'Content-Type': 'application/json',
-            'Authorization': `Bearer ${process.env.TOKEN}`,
+            'Authorization': `Bearer ${process.env.API_TOKEN}`,
         },
         method: 'POST',
         body: JSON.stringify({data:{
