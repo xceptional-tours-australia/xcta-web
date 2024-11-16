@@ -3,7 +3,7 @@ import './style.css';
 
 export default function ServiceCardDetail({data }:any){
     return (
-        <SheetContent className='service-card-detail__container'>
+        <SheetContent className='service-card-detail__container' side="getInTouch">
             <SheetHeader className='service-card-detail__header'>
                 <span>Services</span>
                 <span>{data?.title}</span>
