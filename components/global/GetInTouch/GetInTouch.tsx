@@ -24,11 +24,11 @@ function GetInTouch({ title } : GetInTouchProps) {
 
         <SheetContent>
           <SheetHeader>
-            <SheetTitle>
+            <SheetTitle className="text-3xl">
               Let&apos;s Talk
             </SheetTitle>
             <SheetDescription>
-              <span className="text-lg">
+              <span className="text-xl">
                 Get in Touch with Xceptional Tours Australia
               </span>
             </SheetDescription>
