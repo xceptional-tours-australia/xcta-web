@@ -32,7 +32,6 @@ function CircleGradient() {
 // export default function ServiceCard({ data: { icon, title }, index,}: ServiceCardProps) {
 export default function ServiceCard({ data = false } : any) {
 
-  console.log('data = ', data)
   return (
     <div className={`service-card__wrapper`}>
       <div className="service-card__content">

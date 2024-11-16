@@ -44,6 +44,7 @@ const sheetVariants = cva(
         left: "inset-y-0 left-0 h-full w-full md:w-[400px] overflow-auto border-r data-[state=closed]:slide-out-to-left data-[state=open]:slide-in-from-left",
         right:
           "inset-y-0 right-0 h-full w-full md:w-[400px] overflow-auto border-l data-[state=closed]:slide-out-to-right data-[state=open]:slide-in-from-right",
+        getInTouch: "inset-y-0 right-0 h-full w-full md:w-[551px] overflow-auto border-l data-[state=closed]:slide-out-to-right data-[state=open]:slide-in-from-right",
       },
     },
     defaultVariants: {

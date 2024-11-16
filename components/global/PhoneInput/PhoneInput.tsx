@@ -63,7 +63,7 @@ PhoneInput.displayName = "PhoneInput";
 const InputComponent = React.forwardRef<HTMLInputElement, InputProps>(
   ({ className, ...props }, ref) => (
     <Input
-      className={cn("", className)}
+      className={cn("", className) + " " + "pl-[2rem] rounded-[1rem] h-[4.5rem] text-[1.6rem] !mt-0"}
       {...props}
       ref={ref}
     />
@@ -122,7 +122,7 @@ const CountrySelect = ({
                   .filter((x) => x.value)
                   .map((option) => (
                     <CommandItem
-                      className="gap-2"
+                      className="gap-2 text-[1.6rem]"
                       key={option.value}
                       onSelect={() => handleSelect(option.value)}
                     >

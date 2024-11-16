@@ -22,19 +22,19 @@ function GetInTouch({ title } : GetInTouchProps) {
           <Button size="lg">{ title }</Button>
         </SheetTrigger>
 
-        <SheetContent>
+        <SheetContent side={"getInTouch"} className="pt-[10rem]">
           <SheetHeader>
-            <SheetTitle className="text-3xl">
+            <SheetTitle className="text-[2.2rem] text-left">
               Let&apos;s Talk
             </SheetTitle>
             <SheetDescription>
-              <span className="text-xl">
+              <span className="text-[1.6rem] leading-[2.4rem] text-left inline-block">
                 Get in Touch with Xceptional Tours Australia
               </span>
             </SheetDescription>
           </SheetHeader>
 
-          <div className="mt-8">
+          <div className="mt-[4rem]">
             <FormAction></FormAction>
           </div>
         </SheetContent>
