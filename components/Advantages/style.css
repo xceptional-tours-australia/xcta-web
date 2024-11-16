@@ -15,8 +15,8 @@
     min-tablet:p-[10rem]
     pb-[7rem]
     min-tablet:pb-[12rem]
-    border
-    border-green-500
+    /* border */
+    /* border-green-500 */
     rounded-[2rem]
     flex
     flex-col
@@ -47,5 +47,5 @@
     flex-col
     gap-[8rem]
     min-tablet:gap-[18rem]
-    border
+    /* border */
 }

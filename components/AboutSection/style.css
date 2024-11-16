@@ -1,6 +1,6 @@
 .about-us {
     @apply
-    border
+    /* border */
     py-[10rem]
     min-tablet:pt-[20rem]
     min-tablet:pb-[10rem]
@@ -25,8 +25,8 @@
     min-tablet:flex-row
     gap-[2rem]
     min-tablet:gap-[4rem]
-    border
-    border-red-500
+    /* border */
+    /* border-red-500 */
 }
 
 .about-section__img-wrapper{
@@ -36,8 +36,8 @@
     /* flex  */
     /* justify-center */
     flex-[2]
-    border
-    border-black
+    /* border */
+    /* border-black */
     max-w-[58rem]
     h-fit
     relative
@@ -52,8 +52,8 @@
     min-tablet:max-w-max
     left-0
     bottom-0
-    border
-    border-blue-500
+    /* border */
+    /* border-blue-500 */
 }
 
 .about-section__img-wrapper .circle-2 {
@@ -63,8 +63,8 @@
     min-tablet:max-w-max
     right-0
     top-0
-    border
-    border-blue-500
+    /* border */
+    /* border-blue-500 */
 }
 
 .about-section__img{
@@ -81,7 +81,7 @@
     /* p-8 */
     mt-[1.6rem]
     flex-1
-    border
+    /* border */
     flex
     flex-col
     gap-[4rem]

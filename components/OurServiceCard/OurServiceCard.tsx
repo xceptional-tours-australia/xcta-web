@@ -47,7 +47,7 @@ export default function OurServiceCard({data}: any) {
           
           <div className="our-service-card__body">
             {/* <h5>{description}</h5> */}
-            <div dangerouslySetInnerHTML={{ __html: data.description }} />
+            <div className="line-clamp-4" dangerouslySetInnerHTML={{ __html: data.description }} />
             
             <span className="our-service-car__rm">Read More</span>
             {/* <Link href={"/our-services/123"}>

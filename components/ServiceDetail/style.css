@@ -94,15 +94,15 @@
 
 .service-detail__footer {
   @apply
-  border
+  /* border */
   flex
   justify-end
 }
 
 .service-detail__next {
   @apply
-  border
-  border-black
+  /* border */
+  /* border-black */
   flex
   flex-col
   gap-[.5rem]

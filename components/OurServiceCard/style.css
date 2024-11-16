@@ -33,8 +33,8 @@
 
 .our-service-card__head {
   @apply
-  border
-  border-red-500
+  /* border */
+  /* border-red-500 */
   min-h-[14.5rem]
   flex
   justify-start
@@ -44,7 +44,7 @@
 }
 
 .our-service-card__icon {
-  @apply aspect-square h-[4.5rem] border
+  @apply aspect-square h-[4.5rem]
 }
 
 .our-service-card__title {

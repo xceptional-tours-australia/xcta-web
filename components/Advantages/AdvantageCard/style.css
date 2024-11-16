@@ -11,7 +11,7 @@
     flex-col
     min-tablet:flex-row
     gap-[5rem]
-    border
+    /* border */
 }
 
 .advantage-card__img-wrapper{
@@ -31,10 +31,10 @@
     min-tablet:after:-right-[2rem]
     after:z-[-1] 
     after:rounded-[2rem]
-    border 
+    /* border  */
     h-fit
     /* max-w-[46rem] */
-    border-red-500
+    /* border-red-500 */
 }
 
 .advantage-card__img-wrapper--even {
@@ -58,7 +58,7 @@
     flex-1 
     min-tablet:pt-[3rem]
     /* py-8 */
-    border
+    /* border */
     flex
     flex-col
     gap-[1rem]

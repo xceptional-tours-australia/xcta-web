@@ -1,7 +1,7 @@
 .service {
     @apply
-    border
-    border-green-500
+    /* border */
+    /* border-green-500 */
     flex-col
     flex
     gap-[6rem]
@@ -28,15 +28,15 @@
 .service .title {
     @apply
     text-right
-    border
+    /* border */
     w-full
     inline-block
 }
 
-.service__boxes {
+/* .service__boxes {
     @apply
     border
-}
+} */
 
 .service__container {
     @apply

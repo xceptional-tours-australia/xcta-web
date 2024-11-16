@@ -88,8 +88,8 @@ body {
 
 .section-wrapper {
   @apply
-  border
-  border-red-500
+  /* border */
+  /* border-red-500 */
   w-full
   max-w-[144rem]
   mx-auto

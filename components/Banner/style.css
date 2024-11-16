@@ -13,8 +13,8 @@
   flex
   justify-center
   items-center
-  border
-  border-red-500
+  /* border */
+  /* border-red-500 */
 }
 
 .banner::after {
@@ -74,11 +74,10 @@
   h-full
 } */
 
-.banner__gradient {
+/* .banner__gradient {
   @apply
-  /* relative */
   border
-}
+} */
 
 .our-team .banner__image {
   @apply

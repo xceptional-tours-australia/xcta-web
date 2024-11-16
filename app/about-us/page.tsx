@@ -8,7 +8,7 @@ import CallToActionAboutUs from "@/components/CallToActionAboutUs/CallToActionAb
 
 export default function AboutUs() {
   return (
-    <main className="about-us">
+    <main className="about">
       <Banner />
       <div className="py-[10rem]">
         <OurMission />
