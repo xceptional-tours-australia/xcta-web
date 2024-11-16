@@ -1,25 +1,17 @@
 import { SheetContent, SheetDescription, SheetHeader, SheetTitle } from '@/components/ui/sheet';
 import './style.css';
 
-interface ServiceDetailProps{
-    title: string;
-}
-
-
-export default function ServiceCardDetail({title}:ServiceDetailProps){
+export default function ServiceCardDetail({data }:any){
     return (
-        <SheetContent>
+        <SheetContent className='service-card-detail__container'>
             <SheetHeader className='service-card-detail__header'>
-                <SheetDescription className='service-card-detail__desc'>
-                    Services
-                </SheetDescription>
-                <SheetTitle className='service-card-detail__title'>
-                    {title}
-                </SheetTitle>
+                <span>Services</span>
+                <span>{data?.title}</span>
             </SheetHeader>
-            <div className='service-card-detail__content'>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae distinctio accusamus eaque culpa ullam dolores hic, assumenda aperiam cum ea! Repellendus dicta ipsum ipsa tempora inventore temporibus est, blanditiis molestiae.</p>
-            </div>
+
+            {data?.description && (
+                <div dangerouslySetInnerHTML={{ __html: data?.description }} className='service-card-detail__description' />
+            )}
         </SheetContent>
     )
 }

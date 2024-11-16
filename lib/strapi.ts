@@ -1,5 +1,6 @@
-export async function getServices() {
-  const apiUrl = `${process.env.API_URL}/services?populate=*`;
+export async function getServices(documentID : any) {
+  const hasID = documentID
+  const apiUrl = hasID ?  `${process.env.API_URL}/services/${documentID}?populate=*` : `${process.env.API_URL}/services?populate=*`;
 
   try {
     const response = await fetch(apiUrl, {

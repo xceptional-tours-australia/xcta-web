@@ -6,11 +6,9 @@ import { Button } from "../ui/button";
 import "./style.css";
 import Image from "next/image";
 import aboutUsImg from "@/assets/image/about-us.png";
+export const fetchCache = 'force-no-store';
 
 export default function ServiceDetail({ data, nextData } : any) {
-  useEffect(() => {
-    console.log("data =", data)
-  }, [])
 
   return (
     <section className="section-wrapper pt-[15rem] pb-[10rem] min-desktop:pt-[21.4rem]">
@@ -51,10 +49,6 @@ export default function ServiceDetail({ data, nextData } : any) {
               />
             )}
           </div>
-
-          {/* <div className="service-detail__content-desc">
-            {data.description}
-          </div> */}
 
           <div dangerouslySetInnerHTML={{ __html: data?.description }} className="service-detail__content-desc" />
         </div>

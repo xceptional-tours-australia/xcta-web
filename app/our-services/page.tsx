@@ -3,9 +3,10 @@ import "./style.css";
 import { getServices } from "@/lib/strapi";
 import OurServiceCard from "@/components/OurServiceCard/OurServiceCard";
 import Banner from "@/components/Banner/Banner";
+export const fetchCache = 'force-no-store';
 
 export default async function OurServices() {
-  let services = await getServices();
+  let services = await getServices(null);
   
   return (
     <main className="oservices">

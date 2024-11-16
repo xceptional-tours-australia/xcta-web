@@ -27,12 +27,8 @@ function CircleGradient() {
 
 export default function OurServiceCard({data}: any) {
 
-  useEffect(() => {
-  // console.log("icon = ", other)
-}, [])
-
   return (
-    <Link href={`/our-services/${data.id}`} className="our-service-card">
+    <Link href={`/our-services/${data.documentId}`} className="our-service-card">
       <div className="our-service-card__wrapper">
         <div className="our-service-card__content">
           <div className="our-service-card__head">

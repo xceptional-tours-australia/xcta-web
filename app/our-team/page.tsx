@@ -2,15 +2,18 @@ import Banner from "@/components/Banner/Banner"
 import "./style.css"
 import { teams } from "@/lib/dummyData"
 import OurCommitmentSection from "@/components/OurCommitmentSection/OurCommitmentSection"
+import { getOurTeams } from "@/lib/strapi"
 
-function OurTeam() {
+export default async function OurTeam() {
+  const ourTeams = await getOurTeams()
+
   return (
     <main className="ourteam">
       <Banner />
 
       <section className="section-wrapper">
         <div className="ourteam__cards">
-          {teams.map((team, i) => (
+          {ourTeams.map((team: any, i : any) => (
             <div className="ourteam__card" key={i}>
               <div className="ourteam__head">
                 <span className="ourteam__title">{ team.name }</span>
@@ -18,7 +21,7 @@ function OurTeam() {
               </div>
 
               <div className="ourteam__body">
-                <p>{ team.description }</p>
+                <p>{ team.information }</p>
               </div>
             </div>
           ))}
@@ -30,4 +33,4 @@ function OurTeam() {
   )
 }
 
-export default OurTeam
+// export default OurTeam

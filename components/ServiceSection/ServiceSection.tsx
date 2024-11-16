@@ -6,42 +6,16 @@ import ServiceCardDetail from "./ServiceCardDetail/ServiceCardDetail";
 import SectionTitle from "../global/SectionTitle/SectionTitle";
 import ServiceCard from "./ServiceCard/ServiceCard";
 import { getServices } from "@/lib/strapi";
+export const fetchCache = 'force-no-store';
 
 export default async function ServiceSection() {
-  let services = await getServices();
+  let services = await getServices(null);
   
-  // services = services.slice(0, 4);
-  // services.push({
-  //   id: -1,
-  //   icon: "",
-  //   title: "View All Services",
-  //   description: "",
-  // });
-
-  // console.log(services)
-
   return (
     <section className="section-wrapper">
       {/* <SectionTitle title="Our Services" position="end" /> */}
       <div className="service">
         <span className="title">Our Services</span>
-
-        {/* <div className="service-section__container">
-          {services.map((data, i) =>
-            i != services.length - 1 ? (
-              <Sheet key={i}>
-                <SheetTrigger asChild>
-                  <ServiceCard data={data} index={i} />
-                </SheetTrigger>
-                <ServiceCardDetail title={data.title} />
-              </Sheet>
-            ) : (
-              <Link href="our-services" key={i}>
-                <ServiceCard data={data} index={i} />
-              </Link>
-            )
-          )}
-        </div> */}
 
         <div className="service__boxes">
           <div className="service__container">
@@ -51,7 +25,7 @@ export default async function ServiceSection() {
                   <SheetTrigger asChild>
                     <ServiceCard data={service} />
                   </SheetTrigger>
-                  <ServiceCardDetail title={service.title} />
+                  <ServiceCardDetail data={service} />
                 </Sheet>
               ))}
             </div>
@@ -63,7 +37,7 @@ export default async function ServiceSection() {
                 <SheetTrigger asChild>
                   <ServiceCard data={service} />
                 </SheetTrigger>
-                <ServiceCardDetail title={service.title} />
+                <ServiceCardDetail data={service} />
               </Sheet>
             ))}
 

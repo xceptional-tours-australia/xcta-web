@@ -56,6 +56,12 @@
   min-tablet:h-[10rem]
 }
 
+
+.navbar__logo {
+  @apply
+  border
+}
+
 .navbar__logo,
 .navbar__items,
 .getintouch {
@@ -311,10 +317,10 @@
   mt-[calc((8rem/2)_-_4.4rem/2)]
 }
 
-.navbar__content .button__corner span {
+/* .navbar__content .button__corner span {
   @apply
   hidden
-}
+} */
 
 .navbar__content .button__corner svg {
   @apply

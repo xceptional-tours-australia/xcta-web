@@ -11,7 +11,16 @@
 }
 
 .testimoni-card__user-profile-picture {
-  @apply w-20 h-20 rounded-full border-2 border-[#E94F37] flex justify-center items-center;
+  @apply 
+  w-[5rem]
+  aspect-square
+  rounded-full 
+  border-2 
+  border-c-variant-orange
+  flex 
+  justify-center 
+  items-center
+  overflow-hidden
 }
 
 .testimoni-card__user-name {

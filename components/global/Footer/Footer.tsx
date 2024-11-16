@@ -26,7 +26,7 @@ export default function Footer() {
               <Link href="#">
                 <FontAwesomeIcon icon={faFacebookF} />
               </Link>
-              <Link href="#">
+              <Link href="https://www.instagram.com/xcta.australia" target="_blank">
                 <FontAwesomeIcon icon={faInstagram} />
               </Link>
               <Link href="#">
@@ -37,11 +37,11 @@ export default function Footer() {
             <div className="footer__directs">
               <div className="footer__direct">
                 <span>Call Us</span>
-                <Link href="#">+61 432 211 1234</Link>
+                <Link href="tel:+614322111234">+61 432 211 1234</Link>
               </div>
               <div className="footer__direct">
                 <span>Email Us</span>
-                <Link href="#">xceptionaltours@gmail.com</Link>
+                <Link href="mailto:xceptionaltours@gmail.com">xceptionaltours@gmail.com</Link>
               </div>
             </div>
           </div>

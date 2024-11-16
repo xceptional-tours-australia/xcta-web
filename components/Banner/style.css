@@ -74,6 +74,12 @@
   h-full
 } */
 
+.banner__gradient {
+  @apply
+  /* relative */
+  border
+}
+
 .our-team .banner__image {
   @apply
   inset-0
@@ -91,6 +97,17 @@
   background: linear-gradient(90deg, rgba(255,255,255,0) 6%, rgba(255,255,255,1) 25%, rgba(255,255,255,1) 77%, rgba(255,255,255,0) 91%);
 }
 
+.banner__gradient::before {
+  @apply
+  /* hidden */
+  content-[""]
+  absolute
+  inset-0
+  z-10
+  bg-gradient-to-t from-c-white to-c-white/0
+  min-tablet:hidden
+}
+
 .banner__gradient::after {
   @apply
   hidden
@@ -99,15 +116,19 @@
 
 .our-team .banner__image:nth-child(1) {
   @apply
+  /* left-0 */
+  /* top-0 */
   min-tablet:-translate-x-[80%]
-  min-tablet:-translate-y-[42%]
+  /* min-tablet:-translate-y-[42%] */
   min-tablet:w-[80%]
 }
 
 .our-team .banner__image:nth-child(2) {
   @apply
+  /* right-0 */
+  /* top-0 */
   -translate-x-[16%]
-  -translate-y-[42%]
+  /* -translate-y-[42%] */
   w-[80%]
   hidden
   min-tablet:block

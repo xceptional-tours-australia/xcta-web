@@ -1,6 +1,6 @@
 import Image from "next/image";
 import "./style.css";
-
+export const fetchCache = 'force-no-store';
 interface ServiceCardProps {
   data: {
     // id: number;
@@ -31,9 +31,9 @@ function CircleGradient() {
 
 // export default function ServiceCard({ data: { icon, title }, index,}: ServiceCardProps) {
 export default function ServiceCard({ data = false } : any) {
-  // console.log(JSON.stringify(data?.logo?.url, null, 2))
+
+  console.log('data = ', data)
   return (
-    // <div className={`service-card__wrapper ${styleCardPerIndex[index]}`}>
     <div className={`service-card__wrapper`}>
       <div className="service-card__content">
         {data?.logo?.url && (

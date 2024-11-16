@@ -1,5 +1,5 @@
 import SectionTitle from "@/components/global/SectionTitle/SectionTitle";
-import aboutUsImg from '@/assets/image/about-us.png';
+import aboutUsImg from '@/assets/image/about-us.jpg';
 import circleImg1 from '@/assets/image/circle-1.svg';
 import circleImg2 from '@/assets/image/circle-2.svg';
 import { Button } from "../ui/button";

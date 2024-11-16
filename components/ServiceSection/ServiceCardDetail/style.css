@@ -1,15 +1,55 @@
+.service-card-detail__container {
+    @apply
+    border
+    border-green-500
+    px-[2rem]
+    min-tablet:px-[4rem]
+    py-[4rem]
+    pt-[10rem]
+    flex
+    flex-col
+    gap-[4rem]
+}
+
 .service-card-detail__header{
-    @apply mb-5;
+    @apply 
+    border
+    border-red-500
+    flex
+    flex-col
+    gap-[1rem]
+    text-c-blue-dark
+    text-left
 }
 
-.service-card-detail__desc{
-    @apply text-2xl text-c-blue-dark mb-2;
+.service-card-detail__header span {
+    @apply
+    inline-block
 }
 
-.service-card-detail__title{
-    @apply text-5xl text-c-blue-dark font-medium leading-snug;
+.service-card-detail__header span:nth-child(1) {
+    @apply
+    text-[1.4rem]
 }
 
+.service-card-detail__header span:nth-child(2) {
+    @apply
+    text-[2.2rem]
+    min-tablet:text-[3.2rem]
+    font-medium
+    leading-snug
+    !mt-0
+    !mb-0
+}
+.service-card-detail__description {
+    @apply
+    text-[1.4rem]
+    text-c-black
+    border-red-500
+    border
+    min-tablet:text-[1.6rem]
+}
+/* 
 .service-card-detail__content{
-    @apply text-xl leading-relaxed text-c-black my-8;
-}
+    @apply text-xl leading-relaxed text-c-black
+} */

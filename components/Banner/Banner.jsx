@@ -14,30 +14,6 @@ export default function Banner() {
   const [bannerFor, setBannerFor] = useState(false);
 
   useEffect(() => {
-    const getProducts = async () => {
-      const reqOptions = {
-        cache: 'no-store',
-        headers: {
-          Authorization: `Bearer ${process.env.NEXT_PUBLIC_API_TOKEN}`,
-        },
-      }
-
-      const apiUrl = `${process.env.NEXT_PUBLIC_API_URL}/services?populate=*`
-    
-      try {
-        const request = await fetch(apiUrl, reqOptions)
-        const response = await request.json()
-        console.log(response)
-      } catch (error) {
-        return error
-      }
-    }
-
-    getProducts()
-  }, [])
-
-  useEffect(() => {
-    // console.log('data = ', data)
     switch (pathname) {
       case '/sitemap':
         setBannerFor('sitemap')

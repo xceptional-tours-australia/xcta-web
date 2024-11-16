@@ -8,6 +8,7 @@ import { X } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faX } from "@fortawesome/free-solid-svg-icons"
+export const fetchCache = 'force-no-store';
 
 const Sheet = SheetPrimitive.Root
 
@@ -67,10 +68,10 @@ const SheetContent = React.forwardRef<
       {...props}
     >
       {children}
-      <SheetPrimitive.Close className="absolute right-10 top-8 cursor-pointer button__corner">
-        {/* <span className="text-lg text-red-600 font-semibold transition duration-300 hover:text-red-800">Close</span> */}
+      <SheetPrimitive.Close className="absolute right-[4rem] top-[4rem] cursor-pointer button__corner">
+        <span className="text-[1.6rem] text-red-600 font-medium transition duration-300 hover:text-red-800">Close</span>
 
-        <FontAwesomeIcon className="icon-x" icon={faX} />
+        {/* <FontAwesomeIcon className="icon-x" icon={faX} /> */}
       </SheetPrimitive.Close>
     </SheetPrimitive.Content>
   </SheetPortal>

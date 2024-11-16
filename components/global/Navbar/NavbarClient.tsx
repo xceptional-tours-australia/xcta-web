@@ -42,7 +42,7 @@ export default function NavbarClient({ data } : any) {
         ...menu,
         subMenus: data.map((item : any) => ({
           title: item.title,
-          url: `/our-services/${item.id}`,
+          url: `/our-services/${item.documentId}`,
         }))
       }
     }
@@ -77,13 +77,15 @@ export default function NavbarClient({ data } : any) {
   return (
     <div className={navbarClass}>
       <div className="navbar__container">
-        <Link href="/" className="navbar__logo">
-          <Image 
-            src={pathname === "/" && !isScrolled ? xctaLogoWhite : xctaLogo}
-            alt="xcta logo white"
-            height={45}
-          />
-        </Link>
+        <div className="navbar__logo">
+          <Link href="/">
+            <Image 
+              src={pathname === "/" && !isScrolled ? xctaLogoWhite : xctaLogo}
+              alt="xcta logo white"
+              height={45}
+            />
+          </Link>
+        </div>
 
         <div className="navbar__items">
           {menus.map((menu, i) => (
