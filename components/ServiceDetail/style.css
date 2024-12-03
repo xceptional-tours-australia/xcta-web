@@ -80,7 +80,8 @@
 
 .service-detail__content-desc {
   @apply /* mt-[4rem] */
-  text-[1.6rem];
+  text-[1.6rem]
+  !max-w-full
 }
 
 .service-detail__footer {
