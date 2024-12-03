@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useEffect } from "react";
 import { MapIcon } from "lucide-react";
 import Link from "next/link";
@@ -6,10 +6,10 @@ import { Button } from "../ui/button";
 import "./style.css";
 import Image from "next/image";
 import aboutUsImg from "@/assets/image/about-us.png";
-export const fetchCache = 'force-no-store';
+export const fetchCache = "force-no-store";
+import parse from "html-react-parser";
 
-export default function ServiceDetail({ data, nextData } : any) {
-
+export default function ServiceDetail({ data, nextData }: any) {
   return (
     <section className="section-wrapper pt-[15rem] pb-[10rem] min-desktop:pt-[21.4rem]">
       <div className="service-detail__content">
@@ -18,7 +18,12 @@ export default function ServiceDetail({ data, nextData } : any) {
             <div className="service-detail__content-header_title">
               <div className="service-detail__content-header_icon">
                 {/* <MapIcon /> */}
-                <Image src={data?.logo?.url} alt="icon" width={70} height={70} />
+                <Image
+                  src={data?.logo?.url}
+                  alt="icon"
+                  width={70}
+                  height={70}
+                />
               </div>
 
               <div className="service-detail__content-title">
@@ -50,7 +55,13 @@ export default function ServiceDetail({ data, nextData } : any) {
             )}
           </div>
 
-          <div dangerouslySetInnerHTML={{ __html: data?.description }} className="service-detail__content-desc" />
+          {/* <div
+            dangerouslySetInnerHTML={{ __html: data?.description }}
+            className="service-detail__content-desc"
+          /> */}
+          <div className="service-detail__content-desc">
+            {parse(data?.description)}
+          </div>
         </div>
 
         {nextData && (
