@@ -58,6 +58,7 @@
   gap-[4rem]
   justify-between
   flex-1
+  w-full
 }
 
 .our-service-card__body div p {

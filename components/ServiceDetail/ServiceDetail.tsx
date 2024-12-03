@@ -5,11 +5,12 @@ import Link from "next/link";
 import { Button } from "../ui/button";
 import "./style.css";
 import Image from "next/image";
-import aboutUsImg from "@/assets/image/about-us.png";
+// import aboutUsImg from "@/assets/image/about-us.png";
 export const fetchCache = "force-no-store";
-import parse from "html-react-parser";
+// import parse from "html-react-parser";
 
 export default function ServiceDetail({ data, nextData }: any) {
+  console.log(data?.description)
   return (
     <section className="section-wrapper pt-[15rem] pb-[10rem] min-desktop:pt-[21.4rem]">
       <div className="service-detail__content">
@@ -55,13 +56,13 @@ export default function ServiceDetail({ data, nextData }: any) {
             )}
           </div>
 
-          {/* <div
+          <div
             dangerouslySetInnerHTML={{ __html: data?.description }}
-            className="service-detail__content-desc"
-          /> */}
-          <div className="service-detail__content-desc">
+            className="service-detail__content-desc prose"
+          />
+          {/* <div className="service-detail__content-desc">
             {parse(data?.description)}
-          </div>
+          </div> */}
         </div>
 
         {nextData && (
