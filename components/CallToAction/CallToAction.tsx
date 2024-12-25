@@ -15,7 +15,7 @@ export default function CallToAction() {
         </div>
 
         {/* <Button size="lg">Get In Touch</Button> */}
-        <GetInTouch title="Get In Touch" />
+        <GetInTouch title="Get In Touch" outline={false} />
       </div>
     </section>
   )
