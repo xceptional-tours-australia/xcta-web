@@ -12,14 +12,15 @@ import "./style.css"
 
 type GetInTouchProps = {
   title: string;
+  outline: boolean
 };
 
-function GetInTouch({ title } : GetInTouchProps) {
+function GetInTouch({ title, outline = false } : GetInTouchProps) {
   return (
     <div className="getintouch">
       <Sheet>
         <SheetTrigger className="sheet-trigger" asChild>
-          <Button size="lg">{ title }</Button>
+          <Button size="lg" variant={outline ? "outlineWhite" : "default"}>{ title }</Button>
         </SheetTrigger>
 
         <SheetContent side={"getInTouch"} className="pt-[10rem]">

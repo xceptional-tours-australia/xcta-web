@@ -4,9 +4,27 @@ import { faCaretRight } from "@fortawesome/free-solid-svg-icons"
 import "./style.css";
 import Banner from "@/components/Banner/Banner";
 import Link from "next/link";
-import { sitemapLinks } from "@/lib/dummyData";
+import { sitemapLinks as dummySitemapLinks } from "@/lib/dummyData";
+import { getServices } from "@/lib/strapi";
 
-export default function page() {
+export const metadata = {
+  title: "Sitemap",
+}
+
+export default async function page() {
+  let data = await getServices(null);
+
+  const servicesChildren = data.map((dat : any) => ({
+    title: dat.title,
+    url: `/our-services/${dat.documentId}`,
+  }));
+
+  const sitemapLinks = dummySitemapLinks.map(link =>
+    link.title === "Our Services"
+      ? { ...link, children: servicesChildren }
+      : link
+  )
+    
   return (
     <main className="sitemap">
       <Banner />
@@ -22,7 +40,7 @@ export default function page() {
 
               {item.children.length > 0 && (
                 <div className="sitemap__lists">
-                  {item.children.map((child, childIndex) => (
+                  {item.children.map((child : any, childIndex : any) => (
                     <div key={childIndex} className="sitemap__list">
                       <FontAwesomeIcon icon={faCaretRight} />
                       <Link href={child.url}>{child.title}</Link>

@@ -5,6 +5,10 @@ import OurServiceCard from "@/components/OurServiceCard/OurServiceCard";
 import Banner from "@/components/Banner/Banner";
 export const fetchCache = 'force-no-store';
 
+export const metadata = {
+  title: "Our Services",
+}
+
 export default async function OurServices() {
   let services = await getServices(null);
   

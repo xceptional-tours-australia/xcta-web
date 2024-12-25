@@ -48,7 +48,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="footer__other">
-        <span>© Xceptional Tours {new Date().getFullYear()}</span>
+        <span>© {new Date().getFullYear()} XCTA Xceptional Tours Australia. All rights reserved.</span>
 
         <div className="footer__legal">
           {/* <Link href="#">Terms & Conditions</Link> */}

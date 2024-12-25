@@ -23,3 +23,8 @@
   font-bold
   max-w-[62rem]
 }
+
+.cta-about-us div {
+  @apply
+  flex-none
+}

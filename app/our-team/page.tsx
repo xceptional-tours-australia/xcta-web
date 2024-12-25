@@ -4,6 +4,10 @@ import { teams } from "@/lib/dummyData"
 import OurCommitmentSection from "@/components/OurCommitmentSection/OurCommitmentSection"
 import { getOurTeams } from "@/lib/strapi"
 
+export const metadata = {
+  title: "Our Team",
+}
+
 export default async function OurTeam() {
   const ourTeams = await getOurTeams()
 

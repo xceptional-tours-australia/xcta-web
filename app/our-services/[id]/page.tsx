@@ -3,6 +3,10 @@ import { getServices } from "@/lib/strapi";
 import React from "react";
 export const fetchCache = 'force-no-store';
 
+export const metadata = {
+  title: "Our Services",
+}
+
 export default async function ServiceDetails({
   params,
 }: {

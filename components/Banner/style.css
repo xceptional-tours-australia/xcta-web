@@ -45,7 +45,10 @@
   transform 
   -translate-x-1/2 
   -translate-y-1/2
-  z-0;
+  z-0
+  h-full
+  /* border */
+  /* border-green-500 */
 }
 
 /* .banner__image {
@@ -63,6 +66,7 @@
 .our-services .banner__image {
   @apply
   min-tablet:-translate-y-[37%]
+  min-tablet:!h-auto
 }
 
 /* .about-us .banner__image {

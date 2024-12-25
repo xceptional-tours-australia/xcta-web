@@ -6,6 +6,10 @@ import Advantages from "@/components/Advantages/Advantages";
 import ServiceSection from "@/components/ServiceSection/ServiceSection";
 import CallToActionAboutUs from "@/components/CallToActionAboutUs/CallToActionAboutUs";
 
+export const metadata = {
+  title: "About Us",
+}
+
 export default function AboutUs() {
   return (
     <main className="about">
