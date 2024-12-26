@@ -18,30 +18,30 @@ export default function Footer() {
               height={45}
             />
 
-            <p>316-322 Portrush Rd, Marryatville SA 5068, Australia</p>
+            <p>Xceptional Tours Australia Pty Ltd (XCTA)<br/>ABN: 46 659 052 892<br/>90 Markeri Street, Mermaid Waters QLD 4218 Australia</p>
           </div>
 
           <div className="footer__contact">
             <div className="footer__social-media">
-              <Link href="#">
+              <Link href="#" className="pointer-events-none opacity-50 cursor-not-allowed">
                 <FontAwesomeIcon icon={faFacebookF} />
               </Link>
               <Link href="https://www.instagram.com/xcta.australia" target="_blank">
                 <FontAwesomeIcon icon={faInstagram} />
               </Link>
-              <Link href="#">
+              <Link href="#" className="pointer-events-none opacity-50 cursor-not-allowed">
                 <FontAwesomeIcon icon={faLinkedin} />
               </Link>
             </div>
 
             <div className="footer__directs">
-              <div className="footer__direct">
+              {/* <div className="footer__direct">
                 <span>Call Us</span>
                 <Link href="tel:+614322111234">+61 432 211 1234</Link>
-              </div>
+              </div> */}
               <div className="footer__direct">
                 <span>Email Us</span>
-                <Link href="mailto:xceptionaltours@gmail.com">xceptionaltours@gmail.com</Link>
+                <Link href="mailto:hello@xcta.com.au">hello@xcta.com.au</Link>
               </div>
             </div>
           </div>
