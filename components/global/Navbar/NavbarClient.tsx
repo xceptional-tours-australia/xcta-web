@@ -161,7 +161,7 @@ export default function NavbarClient({ data } : any) {
           </Sheet>
         </div>
 
-        <GetInTouch title="Get In Touch" />
+        <GetInTouch title="Get In Touch" outline={false} />
       </div>
     </div>
   )
