@@ -2,13 +2,14 @@ import { NextResponse } from "next/server";
 
 export async function POST( req: Request)
 {
+    const apiUrl = `${process.env.API_URL}/subscriptions`;
     const data = await req.json();
 
     if(!data)
         return NextResponse.json({ error: 'No data could be found' }, { status: 500 });
 
     const {firstName, lastName, email, phone, message} = data;
-    const response = await fetch('https://xcta-strapi-do-7jsnm.ondigitalocean.app/api/subscriptions', {
+    const response = await fetch(apiUrl, {
         headers: {
             'Accept': 'application/json',
             'Content-Type': 'application/json',
