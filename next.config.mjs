@@ -4,11 +4,11 @@ const nextConfig = {
         remotePatterns: [
             {
               protocol: 'https',
-              hostname: 'xcta-space.sgp1.digitaloceanspaces.com',
-              pathname: '/**', // Mendukung semua jalur di domain ini
+              hostname: 'xcta-contents.sgp1.digitaloceanspaces.com',
+              pathname: '/**',
             },
           ],
-        domains: ['xcta-space.sgp1.digitaloceanspaces.com'],
+        domains: ['xcta-contents.sgp1.digitaloceanspaces.com'],
     },
 };
 
