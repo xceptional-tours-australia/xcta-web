@@ -173,7 +173,7 @@ export const sitemapLinks = [
     children: [
       {
         title: "Our Team",
-        url: "/about-us/our-team"
+        url: "/our-team"
       }
     ]
   }
