@@ -54,6 +54,12 @@ export const metadata = {
     ],
     type: "website",
   },
+  icons: [{
+    rel: 'icon',
+    type: 'image/jpg',
+    sizes: '144x144',
+    url: '/icon.jpg',
+  }],
   twitter: {
     card: "summary_large_image",
     title: "XCTA Exceptional Tours Australia",
